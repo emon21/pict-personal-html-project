@@ -1,0 +1,11 @@
+{
+  "name": "rakib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,268 @@
+
+/* .work:hover {
+    color:red;
+    transition: all .5s;
+} */
+
+body{
+    background-image: url('../img/BG.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.btn:hover svg path {
+    fill:#fff;
+    transition: all .5s;
+   
+}
+
+
+.work:hover .work2 {
+
+    transition: .3s;
+   background: #A53DFF;
+ 
+}
+.work:hover .work2 svg path {
+   fill:#fff;
+}
+
+.work-icon{
+    
+}
+.work-icon:hover .icon{
+    /* fill:#fff; */
+background:#A53DFF;
+}
+.work-icon:hover{
+/* background:#A53DFF; */
+}
+
+.map{
+    background-color: rgba(250, 246, 246, 0.027);
+}
+
+.map:hover .map2{
+
+    background: #A53DFF;
+    transition: .5s;
+    box-shadow: 0px 59px 124px rgba(0, 0, 0, 0.12);
+}
+.map:hover .map2 svg path{
+    fill: #fff; 
+}
+
+/* socail icon */
+
+.social-icon{
+   
+    transition: .5s;
+}
+.social-icon:hover{
+    background:#A53DFF;
+  
+}
+.social-icon:hover svg path{
+    fill:#fff;
+
+
+}
+.box-shadow{
+    box-shadow: 0px 59px 124px rgba(0, 0, 0, 0.12);
+}
+
+
+.picto-btn{
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+
+/* Primary/500 */
+/* background: #A53DFF; */
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Button */
+
+
+
+/* Body/Regular/600 */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* color: #FFFFFF; */
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.picto-btn:hover svg path{
+    fill: #fff;
+}
+/* socail icon */
+.start-btn{
+    /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 12px;
+
+width: 111px;
+height: 48px;
+
+/* Primary/500 */
+background: #A53DFF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Button */
+
+width: 63px;
+height: 24px;
+
+/* Body/Regular/600 */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Gray/White */
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+..picto-btn{
+ 
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 24px;
+gap: 12px;
+
+width: 190px;
+height: 48px;
+
+/* Gray/White */
+
+background: #FFFFFF;
+/* Primary/500 */
+
+border: 1px solid #A53DFF;
+border-radius: 4px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+
+.btn-txt{
+    /* Button */
+
+width: 106px;
+height: 24px;
+
+/* Body/Regular/600 */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+/* Primary/500 */
+color: #f5f5f5;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+
+/* header area start */
+
+
+/* header area end */
+
+/* banner area start */
+/* banner area end */
+
+/* about area start */
+/* about area end */
+
+/* services area start */
+/* services area end */
+
+/* counter area start */
+/* counter area end */
+
+/* protfolio area start */
+/* protfolio area end */
+
+/* client area start */
+
+
+/* client area end */
+
+/* plan area start */
+/* plan area end */
+
+/* blog area start */
+/* blog area end */
+
+/* partner area start */
+/* partner area end */
+
+/* footer area start */
+/* footer area end */
+
+
+
+  
