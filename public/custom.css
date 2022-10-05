@@ -74,6 +74,13 @@ background:#A53DFF;
 }
 
 
+/* form */
+.input-field:focus + .label-field{
+    bottom: 24px;
+    color: #A53DFF;
+    transition: all 0.7s;
+}
+/* form */
 .picto-btn{
 
 /* Auto layout */
