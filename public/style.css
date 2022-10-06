@@ -832,6 +832,10 @@ video {
   margin-left: 1rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -896,8 +900,20 @@ video {
   height: 1rem;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .max-h-\[276px\] {
   max-height: 276px;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[468px\] {
+  min-height: 468px;
 }
 
 .w-full {
@@ -956,8 +972,24 @@ video {
   width: 1rem;
 }
 
+.w-\[190px\] {
+  width: 190px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
 .min-w-\[312px\] {
   min-width: 312px;
+}
+
+.min-w-\[\] {
+  min-width: ;
+}
+
+.min-w-\[424px\] {
+  min-width: 424px;
 }
 
 .max-w-\[648px\] {
@@ -986,6 +1018,10 @@ video {
 
 .max-w-\[\] {
   max-width: ;
+}
+
+.max-w-\[190px\] {
+  max-width: 190px;
 }
 
 .flex-1 {
@@ -1357,6 +1393,11 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1391,6 +1432,10 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-\[112px\] {
+  padding: 112px;
 }
 
 .py-5 {
@@ -1514,6 +1559,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .font-display {
@@ -2058,6 +2107,16 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2134,6 +2193,10 @@ video {
     min-height: 276px;
   }
 
+  .xl\:min-h-\[468px\] {
+    min-height: 468px;
+  }
+
   .xl\:w-\[264px\] {
     width: 264px;
   }
@@ -2156,6 +2219,10 @@ video {
 
   .xl\:min-w-\[872px\] {
     min-width: 872px;
+  }
+
+  .xl\:min-w-\[424px\] {
+    min-width: 424px;
   }
 
   .xl\:max-w-\[536px\] {
@@ -2206,6 +2273,14 @@ video {
     border-right-width: 2px;
   }
 
+  .xl\:p-\[88px\] {
+    padding: 88px;
+  }
+
+  .xl\:p-\[112px\] {
+    padding: 112px;
+  }
+
   .xl\:px-\[650px\] {
     padding-left: 650px;
     padding-right: 650px;
@@ -2238,6 +2313,10 @@ video {
 
   .xl\:pt-0 {
     padding-top: 0px;
+  }
+
+  .xl\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .xl\:text-start {
