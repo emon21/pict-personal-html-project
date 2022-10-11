@@ -144,6 +144,25 @@ flex-grow: 0;
     text-decoration: none;
 }
 
+.slick-dots li{
+    margin-top: 24px;
+}
+
+/* .slick-dots li.slick-active {
+    background: #210C33;
+    width: 30px;
+    height: 8px;
+    border-radius: 100px;
+    margin-top: 0px;
+}
+
+button#slick-slide-control10 {
+    background: aquamarine;
+    border-radius: 100px;
+    width: 30px;
+    height: 8px;
+} */
+
 /* .icon-inner, .ionicon, svg {
     display: block;
     height: 100%;

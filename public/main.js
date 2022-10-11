@@ -4,7 +4,7 @@ $('.testimonial').slick({
 
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
     arrows: true
@@ -14,28 +14,13 @@ $('.testimonial').slick({
 
   //blog slider
 
-// $('.slider').slick({
-
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 2,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     autoplay: true,
-//     autoplaySpeed: 1000,
-
-// });
-
-
-  //responsiver blog slider
-
   $('.single-item').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1920,
@@ -47,14 +32,14 @@ $('.testimonial').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
