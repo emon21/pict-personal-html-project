@@ -137,7 +137,11 @@ flex-grow: 0;
 
 .nav-menu li.active {
     /* background: rgb(243, 240, 240); */
-    color: blue;
+    color: #a53dff;
+}
+.nav-menu li{
+    color: #333333;
+    text-decoration: none;
 }
 
 /* .icon-inner, .ionicon, svg {
