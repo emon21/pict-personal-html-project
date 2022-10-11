@@ -21,12 +21,24 @@
         href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+        
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Tiro+Bangla:ital@0;1&display=swap"
         rel="stylesheet">
 
     <!-- google Fonts -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 
     <!-- custom css link -->
 
@@ -37,63 +49,70 @@
 
 </head>
 
-<body class="font-display">
+<body   class="font-display" data-offset="150" id="home">
 
     <!-- header area Start-->
-    <header class="bg-white">
+    <header class="bg-white top-menu" >
         <div class="container">
-            <div class="flex justify-between items-center">
-                <div class="py-5 pb-5">
-                    <img src="img/Logo.png" alt="">
+            <div class="p-5  xl:w-full w-full overflow-hidden z-[99999]  md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center py-5 pb-5 mx-auto xl:mx-0">
+                    <a href="">
+                        <img src="img/Logo.png" alt="">
+                    </a>
+                    <span class="text-3xl cursor-pointer md:hidden mx-2 block text-gray-800">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
                 </div>
-                <nav class="py-5 pb-7">
-                    <ul class="capitalize flex flex-wrap justify-center items-center">
+               
 
+               
+                <ul class="nav bg-gray-500 xl:bg-transparent mt-12 xl:mt-0 mb-4 w-full md:flex md:items-center -z-1 md:z-auto md:static absolute  left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 capitalize nav-menu" id="nav">
                         <li class="px-6 py-3">
-                            <a class=" text-[#A53DFF] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#home">home</a>
+                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
+                                href="#">home</a>
                         </li>
-
+                
                         <li class="px-6 py-3">
                             <a class="text-[#333333] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
                                 href="#about">about</a>
                         </li>
-
+                
                         <li class="px-6 py-3">
                             <a class="text-[#333333] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
                                 href="#workprocess">service</a>
                         </li>
-
-
+                
+                
                         <li class="px-6 py-3">
                             <a class="text-[#333333] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
                                 href="#workprocess">process</a>
                         </li>
-
+                
                         <li class="px-6 py-3">
                             <a class="text-[#333333] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
                                 href="#portfolio">portfolio</a>
                         </li>
-
+                
                         <li class="px-6 py-3">
                             <a class="text-[#333333] font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
                                 href="#blog">blog</a>
                         </li>
-
+                
                         <!-- <li
                             class="px-3 py-4 hover:border-white border border-[#A53DFF] bg-[#A53DFF]   hover:bg-indigo-500 rounded-xl h-16  transition duration-500">
                             <a class="py-2 px-6  hover:no-underline text-white hover:text-white  transition duration-500"
                                 href="#">contact</a>
                         </li> -->
-
+                
                         <!-- <button class="font-Work Sans text-base bg-[#A53DFF] px-6 py-3 rounded text-white font-semibold capitalize">contact</button> -->
                         <button
-                            class="picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500 "
+                            class="picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500  mb-4"
                             id="contact">contact</button>
-
-
+                
+                
                     </ul>
-                </nav>
+            
+            
             </div>
 
         </div>
@@ -635,11 +654,11 @@
     </section>
 
     <!-- call-to-action area End -->
-
+         
     <!-- blog area Start-->
 
     <section class="py-[100px]  bg-transparent" id="blog">
-
+        
         <div class="container">
             <div class="text-center xl:min-w-[560px] w-full mx-auto">
 
@@ -648,12 +667,13 @@
                     There are many variations of passages of Lorem Ipsum available,but the majority have suffered
                     alteration.</p>
             </div>
+          
             <!-- blog wrapper start -->
-            <div class="flex flex-wrap xl:flex-nowrap mt-[70px] gap-6 items-center justify-center">
+            <div class="single-item  mt-[70px] ">
                 <!-- blog card start -->
 
                 <!-- blog item 1 start -->
-                <div class="border-[1px] mx-4 xl:max-w-[312px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                <div class="border-[1px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer mx-10">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full">
@@ -673,7 +693,7 @@
                 <!-- blog item 1 End-->
 
                 <!-- blog item 2 start -->
-                <div class="border-[1px] mx-4 xl:max-w-[312px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog2.png" alt="" class="w-full">
@@ -693,7 +713,7 @@
                 <!-- blog item 2 End-->
 
                 <!-- blog item 3 start -->
-                <div class="border-[1px] mx-4 xl:max-w-[312px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog3.png" alt="" class="w-full">
@@ -713,7 +733,7 @@
                 <!-- blog item 3 End-->
 
                 <!-- blog item 4 start -->
-                <div class="border-[1px] mx-4 xl:max-w-[312px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog4.png" alt="" class="w-full">
@@ -731,6 +751,46 @@
                     <!-- blog content end-->
                 </div>
                 <!-- blog item 4 End-->
+
+                 <!-- blog item 3 start -->
+                 <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                    <!-- blog image start -->
+                    <div class="w-full">
+                        <img src="img/blog3.png" alt="" class="w-full">
+                    </div>
+                    <!-- blog image end -->
+
+                    <!-- blog content start -->
+                    <div class="xl:max-w-[264px] w-full p-6 text-gray-400 text-[14px]">
+                        <span class="font-display text-[14px] leading-[20px]">22 Oct, 2020</span> /
+                        <span class="font-display text-[14px] leading-[20px]">246 Comments</span>
+                        <p class="pt-2 text-[#333333] font-display text-[18px] leading-[24px] font-semibold ">Lorem
+                            ipsum dolor sit consea. Nulla
+                            purus arcu</p>
+                    </div>
+                    <!-- blog content end-->
+                </div>
+                <!-- blog item 3 End-->
+
+                <!-- blog item 2 start -->
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer">
+                    <!-- blog image start -->
+                    <div class="w-full">
+                        <img src="img/blog2.png" alt="" class="w-full">
+                    </div>
+                    <!-- blog image end -->
+
+                    <!-- blog content start -->
+                    <div class="xl:max-w-[264px] w-full p-6 text-gray-400 text-[14px]">
+                        <span class="font-display text-[14px] leading-[20px]">22 Oct, 2020</span> /
+                        <span class="font-display text-[14px] leading-[20px]">246 Comments</span>
+                        <p class="pt-2 text-[#333333] font-display text-[18px] leading-[24px] font-semibold ">Lorem
+                            ipsum dolor sit consea. Nulla
+                            purus arcu</p>
+                    </div>
+                    <!-- blog content end-->
+                </div>
+                <!-- blog item 2 End-->
 
                 <!-- blog card end -->
             </div>
@@ -809,22 +869,24 @@
             <!-- client Logo area start-->
             <div class="flex gap-6 cursor-pointer">
                 <!-- logo area -->
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+
+                
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/google1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/dribbble1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/linkedin1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/amazon1.svg" alt="" class="w-[200px] h-[200px] xl:pt-6">
                 </div>
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/wordmark1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="transition duration-500 grayscale hover:grayscale-0 p-4">
+                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/spotify1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
                 <!-- logo area -->
@@ -848,16 +910,77 @@
 
             <!-- testimonial -->
             <!-- testimonial item start -->
-            <div class="">
-                <div class="mt-20 xl:min-w-[872px] text-center">
-                    <p class="font-display text-[18px] leading-[24px] text-gray-800">“Nulla efficitur nisl sit amet
-                        velit malesuada dapibus. Duis mollis felis turpis,
-                        nec semper odio convallis at. Curabitur imperdiet semper arcu, a finibus arcu suscipit in. Donec
-                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                        Morbi ornare elit at libero suscipit porta.”</p>
-                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Esther Howard</h2>
-                    <p class="pt-2 text-[16px] leading-[24px] font-display">Managing Director, ABC company</p>
-                </div>
+            <div class="testimonial pt-6">
+               <!-- item -->
+               <div class="text-center">
+                
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+           <div class="text-center">
+            
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+           <div class="text-center">
+            
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+           <div class="text-center">
+            
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+           <div class="text-center">
+            
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+           <div class="text-center">
+            
+                <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                    Donec
+                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                    Morbi ornare elit at libero suscipit porta.”</p>
+            
+            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+        </div>
+
+           
+               <!-- item -->
             </div>
             <!-- testimonial item End-->
 
@@ -1124,14 +1247,14 @@
     <!-- footer area End -->
     <section class="bg-gray-800 z-10 -mt-[60px]">
         <div class="container">
-            <div class="flex flex-wrap justify-between items-center mt-[104px] mb-[50px]">
+            <div class="flex xl:flex-nowrap flex-wrap justify-between items-center mt-[104px] mb-[50px]">
                 <!-- logo -->
-                <div>
+                <div class="mx-auto xl:mx-0">
                     <img src="img/logo/Logo (1).png" alt="">
                 </div>
                 <!-- logo -->
                 <!-- menu -->
-                <ul class="flex flex-wrap items-center justify-center capitalize underline-0">
+                <ul class="flex flex-wrap xl:flex-nowrap items-center justify-center capitalize underline-0">
 
                     <li class="p-3">
                         <a class="text-[#F0F1F3] font-display font-normal text-[16px] leading-6 hover:text-[#A53DFF] transition ease-linear duration-500 hover:no-underline"
@@ -1172,7 +1295,7 @@
 
                 <!-- menu -->
                 <!-- copyright -->
-                <p class="text-white font-display text-[16px] leading-6 font-normal">Copyright © 2022 Picto.</p>
+                <p class="text-white font-display text-[16px] leading-6 mx-auto xl:mx-0">Copyright © 2022 Picto.</p>
                 <!-- copyright -->
             </div>
         </div>
@@ -1182,6 +1305,50 @@
     <!-- Script Start -->
 
     <!-- Script End -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/public/main.js"></script>
+
+    <script>
+        //menu responsive
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+             list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+
+
+<script>
+
+    $(window).on("scroll", function () {
+          var scroll = $(window).scrollTop();
+          if (scroll < 150) {
+            $(".top-menu").removeClass("scroll-header");
+          } else {
+            $(".top-menu").addClass("scroll-header");
+          }
+        });
+
+
+ $('#nav a').click(function(e){
+    // alert('hello')
+    e.preventDefault();
+     var hash = this.hash;
+     var position = $(hash).offset().top;
+   // alert(position);
+     $('html').animate({
+         scrollTop:position
+     },800);
+ });
+
+//  $(document).ready(function(){
+//      $('nav-link').on('click',function(){
+//          $(this).siblings().removeClass('active');
+//          $(this).addClass('active');
+//      });
+//  });
+  </script>
 
 </body>
 
