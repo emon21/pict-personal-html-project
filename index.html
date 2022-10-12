@@ -17,27 +17,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-        
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Tiro+Bangla:ital@0;1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- google Fonts -->
 
-
+    <!-- icon iconic -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 
     <!-- custom css link -->
@@ -49,70 +41,91 @@
 
 </head>
 
-<body   class="font-display" data-offset="150" id="home">
+<body class="font-display" data-offset="150" id="home">
+
+
+    <!-- preloader -->
+
+    <div class="preloader">
+        <div class="loader">
+            <div>
+                <svg aria-hidden="true"
+                    class="mx-auto  w-20 h-20 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                    viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path
+                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                        fill="currentColor" />
+
+                    <path
+                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                        fill="currentFill" />
+
+                </svg>
+            </div>
+        </div>
+    </div>
 
     <!-- header area Start-->
-    <header class="bg-white top-menu" >
+    <header class="bg-white top-menu">
         <div class="container">
             <div class="p-5  xl:w-full w-full overflow-hidden z-[99999]  md:flex md:items-center md:justify-between">
+                <!-- logo Start -->
                 <div class="flex justify-between items-center py-5 pb-5 mx-auto xl:mx-0">
                     <a href="">
                         <img src="img/Logo.png" alt="">
                     </a>
-                    <span class="text-3xl cursor-pointer md:hidden mx-2 block text-gray-800">
-                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    <span class="cursor-pointer md:hidden mx-2 block text-gray-800">
+                        <ion-icon name="menu" onclick="Menu(this)" style="height: 50px;
+                        width: 50px;"></ion-icon>
                     </span>
                 </div>
-               
+                <!-- logo End -->
 
-               
-                <ul class="bg-gray-500 xl:bg-transparent mt-12 xl:mt-0 mb-4 w-full md:flex md:items-center -z-1 md:z-auto md:static absolute  left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 capitalize nav-menu">
-                        <li class="px-6 py-3 active">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500 "
-                                href="#">home</a>
-                        </li>
-                
-                        <li class="px-6 py-3">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#about">about</a>
-                        </li>
-                
-                        <li class="px-6 py-3">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#service">service</a>
-                        </li>
-                
-                
-                        <li class="px-6 py-3">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#workprocess">process</a>
-                        </li>
-                
-                        <li class="px-6 py-3">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#portfolio">portfolio</a>
-                        </li>
-                
-                        <li class="px-6 py-3">
-                            <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
-                                href="#blog">blog</a>
-                        </li>
-                
-                        <!-- <li
-                            class="px-3 py-4 hover:border-white border border-[#A53DFF] bg-[#A53DFF]   hover:bg-indigo-500 rounded-xl h-16  transition duration-500">
-                            <a class="py-2 px-6  hover:no-underline text-white hover:text-white  transition duration-500"
-                                href="#">contact</a>
-                        </li> -->
-                
-                        <!-- <button class="font-Work Sans text-base bg-[#A53DFF] px-6 py-3 rounded text-white font-semibold capitalize">contact</button> -->
-                        <button
-                            class="picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500  mb-4"
-                            id="contact">contact</button>
-                
-                
-                    </ul>
-            
-            
+                <!-- Top menu Start -->
+                <ul
+                    class="bg-transparent xl:bg-transparent mt-12 xl:mt-0 mb-4 w-full md:flex md:items-center -z-1 md:z-auto md:static absolute  left-0 md:w-auto md:py-0  md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 capitalize nav-menu pt-5 pb-7 z-10">
+                    <li class="px-6 py-3 active">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500 block"
+                            href="#">home</a>
+                    </li>
+
+                    <li class="px-6 py-3">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
+                            href="#about">about</a>
+                    </li>
+
+                    <li class="px-6 py-3">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
+                            href="#service">service</a>
+                    </li>
+
+                    <li class="px-6 py-3">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
+                            href="#workprocess">process</a>
+                    </li>
+
+                    <li class=" px-6 py-3">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500"
+                            href="#portfolio">portfolio</a>
+                    </li>
+
+                    <li class=" px-6 ">
+                        <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500 py-3"
+                            href="#blog">blog</a>
+                    </li>
+
+                    <!-- contact button -->
+                    <button
+                        class="picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500 mb-7 mt-5"
+                        id="contact">contact</button>
+                    <!-- contact button -->
+                </ul>
+                <!-- Top menu End -->
+
+
+
+
             </div>
 
         </div>
@@ -141,22 +154,29 @@
 
                     <!-- <button class="mt-6 font-[Work Sans] text-base bg-[#A53DFF] px-6 py-3 rounded text-white font-semibold capitalize">my projectd</button> -->
 
-                    <div class="grid grid-cols-1 gap-3 xl:grid-cols-3 items-center bg-[#EDD8FF]  rounded-[6px] mt-[142px] mx-6 xl:mx-0">
+                    <div
+                        class="grid grid-cols-1 gap-3 xl:grid-cols-3 items-center bg-[#EDD8FF]  rounded-[6px] mt-[142px] mx-6 xl:mx-0">
 
                         <div class="xl:border-r-[2px] border-b-2  border-white py-[17px] text-center h-full ">
                             <h2 class="text-[32px] leading-[40px] font-display font-semibold text-gray-700">15 Y</h2>
-                            <p class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">experience</p>
+                            <p
+                                class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">
+                                experience</p>
                         </div>
 
                         <div class="xl:border-r-[2px] border-b-2  border-white py-[17px] text-center h-full">
                             <h2 class="text-[32px] leading-[40px] font-display font-semibold text-gray-700">250+</h2>
-                            <p class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">project complate
+                            <p
+                                class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">
+                                project complate
                             </p>
                         </div>
 
                         <div class="py-[17px] text-center">
                             <h2 class="text-[32px] leading-[40px] font-display font-semibold text-gray-700">58</h2>
-                            <p class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">happy client</p>
+                            <p
+                                class="text-[16px] leading-[24px] pt-2 text-gray-500 font-display capitalize text-center">
+                                happy client</p>
                         </div>
 
                     </div>
@@ -180,7 +200,8 @@
                         </div>
                         <!-- social icon -->
                         <div class="flex justify-center">
-                            <div class="bg-white inline-flex shadow-md  flex-wrap justify-center items-center -mt-12 mx-auto p-3 z-50">
+                            <div
+                                class="bg-white inline-flex shadow-md  flex-wrap justify-center items-center -mt-12 mx-auto p-3 z-50">
 
                                 <!-- social icon 1 -->
                                 <a href="#" class="p-[15px] W-[48px] h-[48px] cursor-pointer social-icon">
@@ -237,13 +258,17 @@
                     </div>
 
                     <div class="xl:max-w-[536px] w-full mx-4 xl:mx-0 text-center xl:text-start">
-                        <h2 class="xl:text-[38px] xl:text-4xl text-2xl xl:leading-[50px] font-semibold font-display text-gray-900 mt-5 xl:mt-0">I am
+                        <h2
+                            class="xl:text-[38px] xl:text-4xl text-2xl xl:leading-[50px] font-semibold font-display text-gray-900 mt-5 xl:mt-0">
+                            I am
                             Professional User Experience Designer</h2>
-                        <p class="pt-8 text-gray-400  text-lg xl:text-[18px] xl:leading-[24px] font-display">I design and develop
+                        <p class="pt-8 text-gray-400  text-lg xl:text-[18px] xl:leading-[24px] font-display">I design
+                            and develop
                             services for customers
                             specializing creating stylish, modern websites, web
                             services and online stores. My passion is to design digital user experiences.</p>
-                        <p class="text-lg xl:text-[18px] xl:leading-[24px] font-display text-gray-400 pt-4 mb-8">I design and develop
+                        <p class="text-lg xl:text-[18px] xl:leading-[24px] font-display text-gray-400 pt-4 mb-8">I
+                            design and develop
                             services for customers
                             specializing creating stylish, modern websites, web
                             services.</p>
@@ -265,7 +290,7 @@
                                             fill="#A53DFF" />
                                     </svg>
                                 </span>
-                                <span class="font-display  text-[16px] leading-[24px]">download CV</span>
+                                <span class="font-display  text-[16px] leading-[24px] ">download CV</span>
                             </button>
 
                         </div>
@@ -288,7 +313,9 @@
 
                     <!-- left -->
                     <div class="xl:max-w-[529px] xl:mt-[180px] text-center xl:text-start">
-                        <h2 class="text-gray-900 font-display font-semibold xl:text-[48px] text-4xl leading-[56px] capitalize">work
+                        <h2
+                            class="text-gray-900 font-display font-semibold xl:text-[48px] text-4xl leading-[56px] capitalize">
+                            work
                             process</h2>
                         <p class="text-gray-500 pt-6 font-display text-[18px] leading-[24px]">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
@@ -303,7 +330,8 @@
                     <div class="flex flex-wrap  gap-6 xl:max-w-[648px] w-full">
                         <!-- card work 1 -->
 
-                        <div class="xl:max-w-[312px]  w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl   work mx-4 xl:mx-0">
+                        <div
+                            class="xl:max-w-[312px]  w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl   work mx-4 xl:mx-0">
                             <span
                                 class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] shadow-2xl mb-4 rounded text-center flex items-center justify-center">
                                 <svg width="24" height="28" viewBox="0 0 24 28" fill="none"
@@ -327,7 +355,8 @@
                         </div>
 
                         <!-- card work 2 -->
-                        <div class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] mb-6 xl:mb-0 bg-white p-8 mt-6 rounded-xl  work mx-4 xl:mx-0">
+                        <div
+                            class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] mb-6 xl:mb-0 bg-white p-8 mt-6 rounded-xl  work mx-4 xl:mx-0">
                             <span
                                 class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] shadow-2xl mb-4 rounded text-center flex items-center justify-center">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -350,7 +379,8 @@
                         </div>
 
                         <!-- card work 3 -->
-                        <div class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl -mt-6  work mx-4 xl:mx-0">
+                        <div
+                            class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl -mt-6  work mx-4 xl:mx-0">
                             <span
                                 class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] shadow-2xl mb-4 rounded text-center flex items-center justify-center">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
@@ -373,7 +403,8 @@
                         </div>
 
                         <!-- card work 4-->
-                        <div class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl  work mx-4 xl:mx-0">
+                        <div
+                            class="xl:max-w-[312px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl  work mx-4 xl:mx-0">
                             <span
                                 class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] shadow-2xl mb-4 rounded text-center flex items-center justify-center">
 
@@ -417,10 +448,12 @@
                     available,
                     but the majority have suffered alteration.</p>
                 <!-- prtfolio -->
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center mx-auto justify-center gap-6 mt-[70px]">
-                
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center mx-auto justify-center gap-6 mt-[70px]">
+
                     <!-- card portfolio 1-->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -452,7 +485,8 @@
                     </div>
 
                     <!-- card portfolio 2-->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio1.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -484,7 +518,8 @@
                     </div>
 
                     <!-- card portfolio 3-->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio2.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -516,7 +551,8 @@
                     </div>
 
                     <!-- card portfolio 4 -->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio3.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -548,7 +584,8 @@
                     </div>
 
                     <!-- card portfolio 5 -->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio4.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -580,7 +617,8 @@
                     </div>
 
                     <!-- card portfolio 6 -->
-                    <div class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
+                    <div
+                        class="bg-gray-100 border border-gray-[#E6E8EB]  rounded-lg max-w-[424px] w-full hover:shadow-2xl  transition duration-500 xl:mx-0 mx-auto">
                         <div class="">
                             <img src="img/portfolio5.png" class="w-full rounded-tr-lg rounded-tl-lg" alt="">
                         </div>
@@ -630,50 +668,54 @@
     <section class="bg-gray-900 xl:px-[650px] xl:py-[100px] xl:mx-0">
         <div>
             <div class="text-center">
-                <h2 class="font-display text-2xl pt-6 xl:pt-0 xl:text-[48px]  xl:leading-[56px] font-semibold text-white ">
+                <h2
+                    class="font-display text-2xl pt-6 xl:pt-0 xl:text-[48px]  xl:leading-[56px] font-semibold text-white ">
                     Do you have Project Idia?
                     Let's discuss your project!</h2>
                 <p class="pt-8 font-display text-[18px] leading-[24px] text-[#A5ACB5]">
                     There are many variations of passages of Lorem Ipsum available,
                     but the majority have suffered alteration.</p>
-                <button
-                    class="picto-btn font-display capitalize bg-[#A53DFF] hover:border hover:bg-transparent hover:text-[#A53DFF] px-6 py-3 rounded text-white border border-[#A53DFF] transition ease-linear duration-500 text-base flex gap-4 mx-auto mt-8">
 
-                    <span>Let’s work Together</span>
-                    <span class="">
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.42 11.6202C18.3724 11.4974 18.301 11.3853 18.21 11.2902L13.21 6.29019C13.1168 6.19695 13.0061 6.12299 12.8842 6.07253C12.7624 6.02207 12.6319 5.99609 12.5 5.99609C12.2337 5.99609 11.9783 6.10188 11.79 6.29019C11.6968 6.38342 11.6228 6.49411 11.5723 6.61594C11.5219 6.73776 11.4959 6.86833 11.4959 7.00019C11.4959 7.26649 11.6017 7.52188 11.79 7.71019L15.09 11.0002H7.5C7.23478 11.0002 6.98043 11.1055 6.79289 11.2931C6.60536 11.4806 6.5 11.735 6.5 12.0002C6.5 12.2654 6.60536 12.5198 6.79289 12.7073C6.98043 12.8948 7.23478 13.0002 7.5 13.0002H15.09L11.79 16.2902C11.6963 16.3831 11.6219 16.4937 11.5711 16.6156C11.5203 16.7375 11.4942 16.8682 11.4942 17.0002C11.4942 17.1322 11.5203 17.2629 11.5711 17.3848C11.6219 17.5066 11.6963 17.6172 11.79 17.7102C11.883 17.8039 11.9936 17.8783 12.1154 17.9291C12.2373 17.9798 12.368 18.006 12.5 18.006C12.632 18.006 12.7627 17.9798 12.8846 17.9291C13.0064 17.8783 13.117 17.8039 13.21 17.7102L18.21 12.7102C18.301 12.6151 18.3724 12.5029 18.42 12.3802C18.52 12.1367 18.52 11.8636 18.42 11.6202Z"
-                                fill="white" />
-                        </svg>
-                    </span>
-                </button>
-                <br/>
+                    <button
+                                class="picto-btn font-display capitalize mt-8 mb-8 bg-[#A53DFF] text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-white px-6 py-3 rounded border border-[#A53DFF]  transition ease-linear duration-500 text-base flex gap-4 mx-auto">
+
+                                <span>Let’s work Together</span>
+                                <span class="">
+                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.92 6.61994C11.8724 6.49719 11.801 6.38505 11.71 6.28994L6.71 1.28994C6.61676 1.1967 6.50607 1.12274 6.38425 1.07228C6.26243 1.02182 6.13186 0.99585 6 0.99585C5.7337 0.99585 5.4783 1.10164 5.29 1.28994C5.19676 1.38318 5.1228 1.49387 5.07234 1.61569C5.02188 1.73751 4.99591 1.86808 4.99591 1.99994C4.99591 2.26624 5.1017 2.52164 5.29 2.70994L8.59 5.99994H1C0.734784 5.99994 0.48043 6.1053 0.292893 6.29283C0.105357 6.48037 0 6.73472 0 6.99994C0 7.26516 0.105357 7.51951 0.292893 7.70705C0.48043 7.89458 0.734784 7.99994 1 7.99994H8.59L5.29 11.2899C5.19627 11.3829 5.12188 11.4935 5.07111 11.6154C5.02034 11.7372 4.9942 11.8679 4.9942 11.9999C4.9942 12.132 5.02034 12.2627 5.07111 12.3845C5.12188 12.5064 5.19627 12.617 5.29 12.7099C5.38296 12.8037 5.49356 12.8781 5.61542 12.9288C5.73728 12.9796 5.86799 13.0057 6 13.0057C6.13201 13.0057 6.26272 12.9796 6.38458 12.9288C6.50644 12.8781 6.61704 12.8037 6.71 12.7099L11.71 7.70994C11.801 7.61484 11.8724 7.50269 11.92 7.37994C12.02 7.13648 12.02 6.8634 11.92 6.61994Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
             </div>
         </div>
     </section>
 
     <!-- call-to-action area End -->
-         
+
     <!-- blog area Start-->
 
     <section class="py-[100px]  bg-transparent" id="blog">
-        
+
         <div class="container">
             <div class="text-center xl:min-w-[560px] w-full mx-auto">
 
-                <h2 class="font-display  xl:text-[48px] text-[20px]  leading-[56px] font-semibold text-gray-900">Blog</h2>
+                <h2 class="font-display  xl:text-[48px] text-[20px]  leading-[56px] font-semibold text-gray-900">Blog
+                </h2>
                 <p class="font-display text-gray-400 text-[18px] leading-[24px] pt-6">
                     There are many variations of passages of Lorem Ipsum available,but the majority have suffered
                     alteration.</p>
             </div>
-          
+
             <!-- blog wrapper start -->
             <div class="single-item  mt-[70px] ">
                 <!-- blog card start -->
 
                 <!-- blog item 1 start -->
-                <div class="border-[1px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <div class="border-[1px] xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full">
@@ -693,7 +735,8 @@
                 <!-- blog item 1 End-->
 
                 <!-- blog item 2 start -->
-                <div class="border-[1px]  xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <div class="border-[1px]  xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog2.png" alt="" class="w-full">
@@ -713,7 +756,8 @@
                 <!-- blog item 2 End-->
 
                 <!-- blog item 3 start -->
-                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog3.png" alt="" class="w-full">
@@ -733,7 +777,8 @@
                 <!-- blog item 3 End-->
 
                 <!-- blog item 4 start -->
-                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog4.png" alt="" class="w-full">
@@ -752,8 +797,9 @@
                 </div>
                 <!-- blog item 4 End-->
 
-                 <!-- blog item 3 start -->
-                 <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <!-- blog item 3 start -->
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog3.png" alt="" class="w-full">
@@ -773,7 +819,8 @@
                 <!-- blog item 3 End-->
 
                 <!-- blog item 2 start -->
-                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer" style="margin-right: 10px;">
+                <div class="border-[1px] mx-10 xl:mx-0 w-full hover:border-0 border-gray-300 rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer"
+                    style="margin-right: 10px;">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog2.png" alt="" class="w-full">
@@ -806,7 +853,8 @@
             <div class="flex flex-wrap xl:flex-nowrap  items-center gap-12 xl:gap-[143px]">
                 <!-- left -->
                 <div class="max-w-[529px] w-full text-center xl:text-start">
-                    <h2 class="font-display xl:text-[48px] text-[24px] leading-[56px] text-[#333333] font-semibold">What I do?</h2>
+                    <h2 class="font-display xl:text-[48px] text-[24px] leading-[56px] text-[#333333] font-semibold">What
+                        I do?</h2>
                     <p class="pt-6 font-display text-[18px] leading-[24px] text-gray-400">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Nulla
                         purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac
@@ -823,7 +871,8 @@
                 <!-- right -->
                 <div class="flex flex-col gap-10">
                     <!-- item1 -->
-                    <div class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
+                    <div
+                        class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold ">User Experience (UX)</h2>
                         <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
@@ -831,7 +880,8 @@
                             vestibulum.</p>
                     </div>
                     <!-- item2 -->
-                    <div class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
+                    <div
+                        class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold">User Interface (UI)</h2>
                         <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
@@ -839,7 +889,8 @@
                             vestibulum.</p>
                     </div>
                     <!-- item3 -->
-                    <div class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
+                    <div
+                        class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden text-center xl:text-start">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold">Web Development</h2>
                         <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
@@ -870,23 +921,29 @@
             <div class="flex gap-6 cursor-pointer">
                 <!-- logo area -->
 
-                
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/google1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/dribbble1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/linkedin1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/amazon1.svg" alt="" class="w-[200px] h-[200px] xl:pt-6">
                 </div>
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/wordmark1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
-                <div class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
+                <div
+                    class="grayscale hover:grayscale-0 p-4 opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105">
                     <img src="img/client-logo/spotify1.svg" alt="" class="w-[200px] h-[200px]">
                 </div>
                 <!-- logo area -->
@@ -911,76 +968,76 @@
             <!-- testimonial -->
             <!-- testimonial item start -->
             <div class="testimonial pt-6">
-               <!-- item -->
-               <div class="text-center">
-                
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
-           <div class="text-center">
-            
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
-           <div class="text-center">
-            
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
-           <div class="text-center">
-            
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
-           <div class="text-center">
-            
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
-           <div class="text-center">
-            
-                <p class="font-display text-[18px] leading-[24px] text-gray-800">
-                    “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
-                    Donec
-                    quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                    Morbi ornare elit at libero suscipit porta.”</p>
-            
-            <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
-            <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
-        </div>
+                <!-- item -->
+                <div class="text-center">
 
-           
-               <!-- item -->
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+                <div class="text-center">
+
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+                <div class="text-center">
+
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+                <div class="text-center">
+
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+                <div class="text-center">
+
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+                <div class="text-center">
+
+                    <p class="font-display text-[18px] leading-[24px] text-gray-800">
+                        “Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis,
+                        Donec
+                        quis placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
+                        Morbi ornare elit at libero suscipit porta.”</p>
+
+                    <h2 class="font-display text-[18px] leading-[24px] font-medium pt-6 text-black">Emon Raj</h2>
+                    <span class="pt-2 text-[16px] leading-[24px] font-display">Programmer</span>
+                </div>
+
+
+                <!-- item -->
             </div>
             <!-- testimonial item End-->
 
@@ -998,7 +1055,8 @@
             <div class="flex flex-wrap  xl:flex-nowrap justify-between items-center">
                 <!-- left -->
                 <div class="max-w-[481px] w-full">
-                    <h2 class="xl:text-[38px] text-[20px] leading-[50px] font-semibold font-display">Let’s discuss your Project</h2>
+                    <h2 class="xl:text-[38px] text-[20px] leading-[50px] font-semibold font-display">Let’s discuss your
+                        Project</h2>
                     <p class="pt-4 text-gray-400 text-[18px] leading-[24px] font-display">There are many variations of
                         passages of Lorem Ipsu available.
                         but the majority have suffered alte.</p>
@@ -1183,42 +1241,44 @@
                             <div class="mb-[32px] relative transition duration-500">
                                 <!-- <label for="name" class="block">User Name</label> -->
                                 <input type="text" name="" id="name"
-                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF] focus:outline-none block transition ease-in-out duration-500 w-full text-[#A53DFF] input-field "
-                                    >
-                                <label for="" class="absolute bottom-[14px] label-field text-[#697484]">Name *</label>
+                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF] focus:outline-none block transition ease-in-out duration-500 w-full text-[#A53DFF] input-field ">
+                                <label for="name" class="absolute bottom-[14px] label-field text-[#697484]">Name
+                                    *</label>
                             </div>
                             <div class="mb-[32px] relative">
                                 <!-- <label for="email" class="block">Email</label> -->
                                 <input type="text" name="" id="email"
-                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full text-[#A53DFF] input-field"
-                                    >
-                                <label for="" class="absolute bottom-[14px] label-field text-[#697484]">Email *</label>
+                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full text-[#A53DFF] input-field">
+                                <label for="email" class="absolute bottom-[14px] label-field text-[#697484]">Email
+                                    *</label>
                             </div>
                             <div class="mb-[32px] relative">
                                 <!-- <label for="location" class="block">Location</label> -->
                                 <input type="text" name="" id="location"
-                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full text-[#A53DFF] input-field"
-                                    >
-                                <label for="" class="absolute bottom-[14px] label-field text-[#697484]">Location *</label>
+                                    class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full text-[#A53DFF] input-field">
+                                <label for="location" class="absolute bottom-[14px] label-field text-[#697484]">Location
+                                    *</label>
                             </div>
                             <div class="flex gap-6 mb-[32px]">
                                 <div class="w-[200px] relative">
                                     <!-- <label for="budget" class="block">Budget</label> -->
                                     <input type="text" name="" id="budget"
                                         class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full text-[#A53DFF] input-field">
-                                        <label for="" class="absolute bottom-[14px] label-field text-[#697484]">Budget *</label>
+                                    <label for="budget" class="absolute bottom-[14px] label-field text-[#697484]">Budget
+                                        *</label>
                                 </div>
                                 <div class="relative w-[336px]">
                                     <input type="text" name="" id="subject"
-                                        class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full focus:placeholder:text-[#A53DFF] input-field"
-                                        >
-                                    <label for="" class="absolute bottom-[14px] label-field text-[#697484]">Duration *</label>
+                                        class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full focus:placeholder:text-[#A53DFF] input-field">
+                                    <label for="subject"
+                                        class="absolute bottom-[14px] label-field text-[#697484]">Duration *</label>
                                 </div>
                             </div>
                             <div class="relative mb-0">
                                 <input type="text" name="" id="message"
                                     class="bg-transparent border-b-[1.5px] focus:border-b focus:border-b-[#A53DFF]  focus:outline-none  block transition ease-in-out duration-500  w-full focus:placeholder:text-[#A53DFF] input-field">
-                                <label for="message" class="absolute bottom-[14px] label-field text-[#697484]">Message *</label>
+                                <label for="message" class="absolute bottom-[14px] label-field text-[#697484]">Message
+                                    *</label>
                             </div>
                             <button
                                 class="bg-[#A53DFF] px-6 py-4 mt-[50px] rounded text-white w-[141px] h-[48px] flex items-center justify-center gap-[20px] ">
@@ -1233,8 +1293,8 @@
                                 </span>
                             </button>
                         </form>
-                        
-                       
+
+
                     </div>
                 </div>
             </div>
@@ -1245,7 +1305,7 @@
     <!-- contact area End -->
 
     <!-- footer area End -->
-    <section class="bg-gray-800 z-10 -pt-[60px]">
+    <section class="bg-gray-800 z-10 -mt-[60px]">
         <div class="container">
             <div class="flex xl:flex-nowrap flex-wrap justify-between items-center mt-[104px] mb-[50px]">
                 <!-- logo -->
@@ -1302,45 +1362,15 @@
     </section>
     <!-- footer area End -->
 
-    <!-- Script Start -->
+    <!-- script link -->
 
-    <!-- Script End -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/public/main.js"></script>
 
-    <script>
-        //menu responsive
-        function Menu(e) {
-            let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
-             list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
-        }
-    </script>
+    <!-- script link -->
 
-<script>
 
-    $(window).on("scroll", function () {
-          var scroll = $(window).scrollTop();
-          if (scroll < 150) {
-            $(".top-menu").removeClass("scroll-header");
-          } else {
-            $(".top-menu").addClass("scroll-header");
-          }
-        });
-
- $('.nav-menu li a').click(function(e){
-    // alert('hello')
-    e.preventDefault();
-     var hash = this.hash;
-     var position = $(hash).offset().top;
-   // alert(position);
-     $('html').animate({
-         scrollTop:position
-     },800);
- });
-
-  </script>
 
 </body>
 

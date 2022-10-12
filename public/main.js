@@ -70,3 +70,40 @@ $('.testimonial').slick({
         $(this).addClass('active');
     });
 
+//menu header fixed on scroll
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 150) {
+          $(".top-menu").removeClass("scroll-header");
+        } else {
+          $(".top-menu").addClass("scroll-header");
+        }
+      });
+
+//menu click on section into smooth animation
+      $('.nav-menu li a').click(function(e){
+        // alert('hello')
+        e.preventDefault();
+         var hash = this.hash;
+         var position = $(hash).offset().top;
+       // alert(position);
+         $('html').animate({
+             scrollTop:position
+         },800);
+     });
+
+     //menu responsive
+     function Menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+         list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+
+
+    //preloader
+    $(window).on("load", function () { 
+
+         $(".preloader").fadeOut(1000);
+         
+    });
+

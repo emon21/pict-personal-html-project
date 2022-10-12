@@ -12,6 +12,28 @@ body{
 
 }
 
+
+/* preloader */
+
+.preloader {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100%;
+    max-width: 500px;
+    ;
+}
+
+/* preloader */
+
 .btn:hover svg path {
     fill:#fff;
     transition: all .5s;
@@ -80,47 +102,33 @@ background:#A53DFF;
     color: #A53DFF;
     transition: all 0.7s;
 }
+
 /* form */
-.picto-btn{
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 24px;
-
-/* Primary/500 */
-/* background: #A53DFF; */
-border-radius: 4px;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-/* Button */
-
-
-
-/* Body/Regular/600 */
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-/* color: #FFFFFF; */
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+.picto-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    /* background: #A53DFF; */
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #FFFFFF; */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin-top: 20px;
+    margin-bottom: 28px; */
 }
+
 .top-menu.scroll-header {
     position: fixed;
     left: 0;
