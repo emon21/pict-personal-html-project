@@ -77,6 +77,7 @@ $('.testimonial').slick({
           $(".top-menu").removeClass("scroll-header");
         } else {
           $(".top-menu").addClass("scroll-header");
+          
         }
       });
 
