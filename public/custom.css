@@ -348,8 +348,10 @@ flex-grow: 0;
     left: -15px;
 }
 
-@media screen {
-    
+@media (max-width:525px) {
+    .slick-dots li button:before {
+        top:-8px;
+    }
 }
 /* testimonials area end */
 
