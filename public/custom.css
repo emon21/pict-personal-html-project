@@ -293,6 +293,7 @@ flex-grow: 0;
 }
 
 
+
 /* header area start */
 
 
@@ -323,6 +324,33 @@ flex-grow: 0;
 
 /* blog area start */
 /* blog area end */
+
+
+/* testimonials area start */
+
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #C3C7CE;
+    border-radius: 100%;
+    opacity: 1;
+   
+}
+
+.slick-dots  li.slick-active button:before {
+    
+    background: #210C33 !important;
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 100px;
+    left: -15px;
+}
+/* testimonials area end */
 
 /* partner area start */
 /* partner area end */

@@ -662,6 +662,10 @@ video {
   bottom: 0px;
 }
 
+.top-\[47px\] {
+  top: 47px;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -1128,6 +1132,18 @@ video {
   overflow: hidden;
 }
 
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-normal {
+  white-space: normal;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1442,6 +1458,26 @@ video {
 
 .pb-\[100px\] {
   padding-bottom: 100px;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pt-\[104px\] {
+  padding-top: 104px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pb-\[\] {
+  padding-bottom: ;
 }
 
 .text-center {
@@ -2091,6 +2127,10 @@ video {
     width: 100%;
   }
 
+  .xl\:w-\[190px\] {
+    width: 190px;
+  }
+
   .xl\:min-w-\[536px\] {
     min-width: 536px;
   }
@@ -2105,6 +2145,10 @@ video {
 
   .xl\:min-w-\[577px\] {
     min-width: 577px;
+  }
+
+  .xl\:min-w-\[190px\] {
+    min-width: 190px;
   }
 
   .xl\:max-w-\[536px\] {
@@ -2129,6 +2173,10 @@ video {
 
   .xl\:max-w-\[560px\] {
     max-width: 560px;
+  }
+
+  .xl\:max-w-\[190px\] {
+    max-width: 190px;
   }
 
   .xl\:grid-cols-3 {
@@ -2203,6 +2251,10 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .xl\:pl-0 {
+    padding-left: 0px;
   }
 
   .xl\:text-start {
