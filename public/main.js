@@ -7,7 +7,7 @@ $('.testimonial').slick({
     autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
-    arrows: true
+    arrows: false
 
   });
 
@@ -17,7 +17,7 @@ $('.testimonial').slick({
   $('.single-item').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     dots: true,
     arrows: false,
