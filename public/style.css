@@ -1419,6 +1419,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pb-\[100px\] {
   padding-bottom: 100px;
 }
@@ -1429,10 +1433,6 @@ video {
 
 .pb-\[50px\] {
   padding-bottom: 50px;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -1621,10 +1621,6 @@ video {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .opacity-0 {
@@ -2224,12 +2220,12 @@ video {
     padding-left: 0px;
   }
 
-  .xl\:pt-0 {
-    padding-top: 0px;
-  }
-
   .xl\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .xl\:pt-0 {
+    padding-top: 0px;
   }
 
   .xl\:text-start {
