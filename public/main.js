@@ -14,7 +14,7 @@ $('.testimonial').slick({
 
   //blog slider
 
-  $('.single-item').slick({
+  $('.blog-item').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
