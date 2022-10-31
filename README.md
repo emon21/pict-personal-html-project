@@ -3,9 +3,6 @@
     <a href="https://picto-html-single-page-template.netlify.app/">
         <img src="img/screenshort.png" alt="Build Status">
     </a>
-    <a href="https://picto-html-single-page-template.netlify.app/">
-        <img src="img/screenshort.png" alt="Total Downloads">
-    </a>
 </p>
 
 ## About Brooklyn 
