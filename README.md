@@ -6,15 +6,15 @@
 </p>
 
 <p align="center">
-    <a href="https://travis-ci.org/laravel/framework">
-        <img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status">
+    <a href="https://picto-html-single-page-template.netlify.app/">
+        <img src="img/screenshort.png" alt="Build Status">
     </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-        <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
+    <a href="https://picto-html-single-page-template.netlify.app/">
+        <img src="img/screenshort.png" alt="Total Downloads">
     </a>
 </p>
 
-## About Tailwind 
+## About Brooklyn 
 
 <h4>Rapidly build modern websites without ever leaving your HTML.</h4>
 <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
