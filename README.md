@@ -1,11 +1,5 @@
 
 <p align="center">
-    <a href="#" target="_blank">
-        <img src="img/Tailwind_CSS_logo.svg.png" width="400">
-    </a>
-</p>
-
-<p align="center">
     <a href="https://picto-html-single-page-template.netlify.app/">
         <img src="img/screenshort.png" alt="Build Status">
     </a>
