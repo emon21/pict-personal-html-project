@@ -23,7 +23,7 @@ $('.testimonial').slick({
     arrows: false,
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -31,15 +31,17 @@ $('.testimonial').slick({
           dots: true
         }
       },
+      
       {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+         
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -93,12 +95,23 @@ $('.testimonial').slick({
          },800);
      });
 
+
+     //menu responsive
+    //  function Menu(e) {
+    //     console.log(e);
+    //     let list = document.querySelector('ul');
+    //     e.name === 'menu' ? (e.name = "close", list.classList.add('top-[47px]'),
+    //      list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[47px]'), list.classList.remove('opacity-100'))
+    // }
      //menu responsive
      function Menu(e) {
-        console.log('alert');
+        console.log(e);
         let list = document.querySelector('ul');
-        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[47px]'),
-         list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[47px]'), list.classList.remove('opacity-100'))
+        e.name === 'menu' ? (e.name = "close",
+         list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('opacity-100'))
+    }
+    function topMenu(){
+        console.log('click');
     }
 
 

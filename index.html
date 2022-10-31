@@ -90,7 +90,7 @@
                 <!-- logo End -->
 
                 <!-- Top menu Start -->
-                <ul class="bg-white xl:bg-transparent w-full lg:flex lg:items-center -z-1 md:z-auto lg:static absolute md:w-auto md:py-0 md:pl-0  lg:opacity-100 shadow-2xl lg:shadow-none opacity-0 sm:top-[97px] xl:top-[-400px] transition-all ease-in duration-500 capitalize nav-menu z-50  left-8 right-8">
+                <ul class="bg-white xl:bg-transparent w-full md:w-full lg:flex lg:items-center -z-1  lg:static absolute  md:py-0 md:pl-0  lg:opacity-100 shadow-2xl ml-auto justify-end lg:shadow-none opacity-0 top-[97px] xl:top-[-400px] transition-all ease-in duration-500 capitalize nav-menu z-50  left-0 md:z-10 ">
 
                     <li class="py-1 xl:py-0 active">
                         <a class="font-display font-medium text-[16px] leading-6 hover:text-[#A53DFF] hover:no-underline transition duration-500 block px-6 " href="#">home</a>
@@ -122,11 +122,17 @@
                 </ul>
                 <!-- Top menu End -->
 
-                <span class="cursor-pointer lg:hidden  block text-gray-800 mr-2">
+                <span class="cursor-pointer lg:hidden block text-gray-800 mr-2">
                     <ion-icon name="menu" onclick="Menu(this)" style="height: 50px;
                     width: 50px;" role="img" class="hydrated" aria-label="menu">
                     </ion-icon>
                 </span>
+
+                <!-- <span class="cursor-pointer lg:hidden block text-gray-800 mr-2">
+                    <ion-icon  onclick="topMenu()" style="height: 50px;
+                    width: 50px;" name="menu">
+                    </ion-icon>
+                </span> -->
 
             </div>
 
@@ -137,13 +143,13 @@
 
     <!-- banner area Start-->
     <section class="relative">
-        <div class="container px-4 xl:px-0">
+        <div class="container">
 
-            <div class="flex flex-wrap xl:flex-nowrap lg:flex-row flex-col-reverse gap-12 xl:gap-[136px] items-end xl:pt-[126px] ">
+            <div class="flex flex-wrap xl:flex-nowrap  lg:flex-row flex-col-reverse gap-12 xl:gap-[136px] items-end xl:pt-[126px] ">
                 <!-- left -->
-                <div class="">
+                <div class="px-4 xl:px-0">
                     <div class="text-justify">
-                        <h1 class="xl:text-[72px] text-gray-900 font-display xl:leading-[84px] font-semibold">Hello,I'm
+                        <h1 class="xl:text-[72px] text-2xl text-gray-900 font-display xl:leading-[84px] font-semibold">Hello,I'm
                             <br />Brooklyn Gilbert</h1>
                         <p class="font-display xl:py-6 pt-1 text-[18px] leading-[24px] ">
                             I'm a Freelance <b class="decoration-sky-500 bg-orange-200">UI/UX Designer</b> and
@@ -151,14 +157,14 @@
                             strives to build immersive and
                             beautiful web applications through carefully crafted code and user-centric design.
                         </p>
-                        <button class="mt-2 picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500 mx-auto xl:mx-0">Say
+                        <button class="mt-4 picto-btn font-display capitalize bg-[#A53DFF] border text-white hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] transition duration-500 mx-auto xl:mx-0">Say
                             Hello</button>
                     </div>
 
                     <!-- <button class="mt-6 font-[Work Sans] text-base bg-[#A53DFF] px-6 py-3 rounded text-white font-semibold capitalize">my projectd</button> -->
 
                     <div class="grid grid-cols-1 gap-3 md:grid-cols-3 items-center bg-[#EDD8FF] md:max-w-[752px]
-                     rounded-[6px] xl:mt-[142px] mt-4  mx-6 xl:mx-0">
+                     rounded-[6px] xl:mt-[142px] mt-4">
 
                         <div class="xl:border-r-[2px] border-b  border-white py-[17px] text-center h-full ">
                             <h2 class="text-[32px] leading-[40px] font-display font-semibold text-gray-700">15 Y</h2>
@@ -192,13 +198,15 @@
             </div>
         </div>
 
-        <div class="container xl:mt-[222px] z-50" id="about">
+        <!-- about start -->
 
+        <div class="container xl:mt-[222px] z-50" id="about">
             <!-- about -->
             <div class="bg-white rounded-xl overflow-hidden">
-                <div class="flex flex-wrap items-center xl:flex-nowrap xl:gap-32 xl:p-[112px] p-8">
+                <div class="flex flex-wrap justify-center items-center xl:flex-nowrap xl:gap-32 xl:p-[112px] py-8 px-4">
                     <div class="relative">
-                        <div class="z-10 xl:min-w-[424px]  xl:min-h-[468px] ">
+                        
+                        <div class="z-10 xl:min-w-[424px]  md:w-full md:mx-auto  xl:min-h-[468px] ">
                             <img src="img/Rectangle 30.png" alt="" class="w-full h-full object-cover">
                         </div>
                         <!-- social icon -->
@@ -261,22 +269,22 @@
                         <!-- social icon -->
                     </div>
 
-                    <div class="xl:max-w-[536px] w-full mx-4 xl:mx-0 xl:text-start">
+                    <div class="xl:max-w-[536px] w-full xl:mx-0 xl:text-start text-center">
                         <h2
                             class="xl:text-[38px] xl:text-4xl text-2xl xl:leading-[50px] font-semibold font-display text-gray-900 mt-5 xl:mt-0">
                             I am Professional User Experience Designer</h2>
-                        <p class="pt-8 text-gray-400 text-justify  text-lg xl:text-[18px] xl:leading-[24px] font-display">I design
+                        <p class="pt-8 text-gray-400 text-lg xl:text-[18px] xl:leading-[24px] font-display">I design
                             and develop
                             services for customers
                             specializing creating stylish, modern websites, web
                             services and online stores. My passion is to design digital user experiences.</p>
-                        <p class="text-lg xl:text-[18px] text-justify xl:leading-[24px] font-display text-gray-400 pt-4 mb-8">I
+                        <p class="text-lg xl:text-[18px] xl:leading-[24px] font-display text-gray-400 pt-4 mb-8">I
                             design and develop
                             services for customers
                             specializing creating stylish, modern websites, web
                             services.</p>
 
-                        <div class="flex gap-6 flex-col sm:flex-row   xl:mb-0">
+                        <div class="flex gap-6 justify-center flex-col sm:flex-row  xl:mb-0">
 
                             <button
                                 class="picto-btn capitalize  bg-[#A53DFF] border hover:border-[#A53DFF] hover:bg-transparent hover:text-[#A53DFF] text-white transition duration-500 font-display text-[16px] leading-[24px] inline-block  xl:min-w-[190px] sm:w-auto">
@@ -304,137 +312,145 @@
 
             <!-- about -->
         </div>
+        
+        <!-- about end-->
+
     </section>
     <!-- banner area End -->
 
-    <!-- work area Start-->
-    <section class="bg-[#F0F1F3] xl:-mt-[108px]  overflow-hidden xl:pt-[248px] pt-4 xl:pb-[140px] pb-4" id="workprocess">
-        <div class="container">
-            <!-- work process start -->
-            <div class="px-4 xl:px-0">
-                <div class="flex flex-wrap  xl:flex-wrap justify-between">
-                    <!-- left -->
-                    <div class="xl:max-w-[529px] w-full xl:pt-[180px] xl:text-start">
-                        <h2 class="text-gray-900 font-display font-semibold xl:text-[48px] text-4xl leading-[56px] capitalize">
-                            work process</h2>
-                        <p class="text-gray-500 pt-1 xl:pt-6 text-justify font-display text-[18px] leading-[24px]">Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit. Nulla
-                            purus arcu, varius eget velit non,
-                            laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
-                        <p class="pt-4 text-gray-500 text-justify font-display text-[18px] leading-[24px]">Lorem ipsum dolor sit
-                            amet, consectetur adipiscing elit. Nulla
-                            purus arcu, varius eget velit non.</p>
-                    </div>
-                    <!-- left -->
-    
-                   <!-- right -->
-                   <div class="flex flex-wrap gap-6 xl:max-w-[648px] w-full mt-4">
-                        
-                    <!-- card work 1 -->
-                    <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] bg-white px-8 py-8 rounded-xl  work mx-4 xl:mx-0 hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
-
-                        <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
-                            <svg width="24" height="28" viewBox="0 0 24 28" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.3333 16.6666H6.66667C6.31305 16.6666 5.97391 16.8071 5.72386 17.0572C5.47381 17.3072 5.33333 17.6463 5.33333 18C5.33333 18.3536 5.47381 18.6927 5.72386 18.9428C5.97391 19.1928 6.31305 19.3333 6.66667 19.3333H17.3333C17.687 19.3333 18.0261 19.1928 18.2761 18.9428C18.5262 18.6927 18.6667 18.3536 18.6667 18C18.6667 17.6463 18.5262 17.3072 18.2761 17.0572C18.0261 16.8071 17.687 16.6666 17.3333 16.6666ZM17.3333 11.3333H9.33333C8.97971 11.3333 8.64057 11.4738 8.39052 11.7238C8.14048 11.9739 8 12.313 8 12.6666C8 13.0202 8.14048 13.3594 8.39052 13.6094C8.64057 13.8595 8.97971 14 9.33333 14H17.3333C17.687 14 18.0261 13.8595 18.2761 13.6094C18.5262 13.3594 18.6667 13.0202 18.6667 12.6666C18.6667 12.313 18.5262 11.9739 18.2761 11.7238C18.0261 11.4738 17.687 11.3333 17.3333 11.3333ZM22.6667 3.33329H18.6667V1.99996C18.6667 1.64634 18.5262 1.3072 18.2761 1.05715C18.0261 0.807102 17.687 0.666626 17.3333 0.666626C16.9797 0.666626 16.6406 0.807102 16.3905 1.05715C16.1405 1.3072 16 1.64634 16 1.99996V3.33329H13.3333V1.99996C13.3333 1.64634 13.1929 1.3072 12.9428 1.05715C12.6928 0.807102 12.3536 0.666626 12 0.666626C11.6464 0.666626 11.3072 0.807102 11.0572 1.05715C10.8071 1.3072 10.6667 1.64634 10.6667 1.99996V3.33329H8V1.99996C8 1.64634 7.85952 1.3072 7.60948 1.05715C7.35943 0.807102 7.02029 0.666626 6.66667 0.666626C6.31305 0.666626 5.97391 0.807102 5.72386 1.05715C5.47381 1.3072 5.33333 1.64634 5.33333 1.99996V3.33329H1.33333C0.979711 3.33329 0.640573 3.47377 0.390524 3.72382C0.140476 3.97387 0 4.313 0 4.66663V23.3333C0 24.3942 0.421427 25.4116 1.17157 26.1617C1.92172 26.9119 2.93913 27.3333 4 27.3333H20C21.0609 27.3333 22.0783 26.9119 22.8284 26.1617C23.5786 25.4116 24 24.3942 24 23.3333V4.66663C24 4.313 23.8595 3.97387 23.6095 3.72382C23.3594 3.47377 23.0203 3.33329 22.6667 3.33329ZM21.3333 23.3333C21.3333 23.6869 21.1929 24.0261 20.9428 24.2761C20.6928 24.5262 20.3536 24.6666 20 24.6666H4C3.64638 24.6666 3.30724 24.5262 3.05719 24.2761C2.80714 24.0261 2.66667 23.6869 2.66667 23.3333V5.99996H5.33333V7.33329C5.33333 7.68691 5.47381 8.02605 5.72386 8.2761C5.97391 8.52615 6.31305 8.66663 6.66667 8.66663C7.02029 8.66663 7.35943 8.52615 7.60948 8.2761C7.85952 8.02605 8 7.68691 8 7.33329V5.99996H10.6667V7.33329C10.6667 7.68691 10.8071 8.02605 11.0572 8.2761C11.3072 8.52615 11.6464 8.66663 12 8.66663C12.3536 8.66663 12.6928 8.52615 12.9428 8.2761C13.1929 8.02605 13.3333 7.68691 13.3333 7.33329V5.99996H16V7.33329C16 7.68691 16.1405 8.02605 16.3905 8.2761C16.6406 8.52615 16.9797 8.66663 17.3333 8.66663C17.687 8.66663 18.0261 8.52615 18.2761 8.2761C18.5262 8.02605 18.6667 7.68691 18.6667 7.33329V5.99996H21.3333V23.3333Z"
-                                    fill="#A53DFF" />
-                            </svg>
-
-
-
-                        </span>
-
-                        <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
-                        <div class="w-[248px]">
-                            <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">1.Research</h2>
-                            <p class="text-base font-display text-gray-600 text-justify">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Nulla purus arcu.</p>
-                        </div>
-                    </div>
-
-                    <!-- card work 2 -->
-                    <!-- <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] bg-white px-8 py-8 rounded-xl  work mx-4 xl:mx-0"> -->
-                    <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] mb-6 xl:mb-0 bg-white p-8 mt-0 xl:mt-6 rounded-xl  work mx-4 xl:mx-0 hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
-
-                        <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
-
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.33333 21.3333C9.86377 21.3333 10.3725 21.1226 10.7475 20.7475C11.1226 20.3724 11.3333 19.8637 11.3333 19.3333C11.3398 19.2668 11.3398 19.1998 11.3333 19.1333L15.0533 15.4133H15.36H15.6667L17.8133 17.56C17.8133 17.56 17.8133 17.6266 17.8133 17.6666C17.8133 18.1971 18.024 18.7058 18.3991 19.0808C18.7742 19.4559 19.2829 19.6666 19.8133 19.6666C20.3438 19.6666 20.8525 19.4559 21.2275 19.0808C21.6026 18.7058 21.8133 18.1971 21.8133 17.6666V17.56L26.6667 12.6666C27.0622 12.6666 27.4489 12.5493 27.7778 12.3296C28.1067 12.1098 28.363 11.7974 28.5144 11.432C28.6658 11.0665 28.7054 10.6644 28.6282 10.2764C28.5511 9.88848 28.3606 9.53212 28.0809 9.25241C27.8012 8.97271 27.4448 8.78223 27.0568 8.70506C26.6689 8.62788 26.2668 8.66749 25.9013 8.81887C25.5358 8.97024 25.2235 9.22659 25.0037 9.55549C24.784 9.88438 24.6667 10.2711 24.6667 10.6666C24.6602 10.7331 24.6602 10.8001 24.6667 10.8666L19.8533 15.68H19.64L17.3333 13.3333C17.3333 12.8029 17.1226 12.2942 16.7475 11.9191C16.3725 11.544 15.8638 11.3333 15.3333 11.3333C14.8029 11.3333 14.2942 11.544 13.9191 11.9191C13.544 12.2942 13.3333 12.8029 13.3333 13.3333L9.33333 17.3333C8.8029 17.3333 8.29419 17.544 7.91912 17.9191C7.54405 18.2942 7.33333 18.8029 7.33333 19.3333C7.33333 19.8637 7.54405 20.3724 7.91912 20.7475C8.29419 21.1226 8.8029 21.3333 9.33333 21.3333ZM27.3333 26.6666H4.66667V3.99996C4.66667 3.64634 4.52619 3.3072 4.27614 3.05715C4.02609 2.8071 3.68696 2.66663 3.33333 2.66663C2.97971 2.66663 2.64057 2.8071 2.39052 3.05715C2.14048 3.3072 2 3.64634 2 3.99996V28C2 28.3536 2.14048 28.6927 2.39052 28.9428C2.64057 29.1928 2.97971 29.3333 3.33333 29.3333H27.3333C27.687 29.3333 28.0261 29.1928 28.2761 28.9428C28.5262 28.6927 28.6667 28.3536 28.6667 28C28.6667 27.6463 28.5262 27.3072 28.2761 27.0571C28.0261 26.8071 27.687 26.6666 27.3333 26.6666Z"
-                                    fill="#A53DFF" />
-                            </svg>
-
-
-                        </span>
-
-                        <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
-                        <div class="w-[248px]">
-                            <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">2.Analyze</h2>
-                            <p class="text-base font-display text-gray-600 text-justify">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Nulla purus arcu.</p>
-                        </div>
-                    </div>
-
-                    <!-- card work 3 -->
-                    <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl -mt-6  work mx-4 xl:mx-0 hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
-
-                        <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
-
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M27.3333 7.65344C27.3343 7.47796 27.3007 7.30401 27.2343 7.14156C27.168 6.97911 27.0702 6.83136 26.9466 6.70677L21.2933 1.05344C21.1687 0.929862 21.021 0.832095 20.8585 0.765742C20.6961 0.699389 20.5221 0.665756 20.3466 0.66677C20.1712 0.665756 19.9972 0.699389 19.8348 0.765742C19.6723 0.832095 19.5246 0.929862 19.4 1.05344L15.6266 4.82677L1.05331 19.4001C0.92974 19.5247 0.831973 19.6724 0.76562 19.8349C0.699267 19.9973 0.665634 20.1713 0.666648 20.3468V26.0001C0.666648 26.3537 0.807124 26.6929 1.05717 26.9429C1.30722 27.193 1.64636 27.3334 1.99998 27.3334H7.65331C7.83988 27.3436 8.0265 27.3144 8.20107 27.2478C8.37564 27.1812 8.53426 27.0786 8.66665 26.9468L23.16 12.3734L26.9466 8.66677C27.0683 8.53754 27.1675 8.38881 27.24 8.22677C27.2528 8.12049 27.2528 8.01305 27.24 7.90677C27.2462 7.8447 27.2462 7.78217 27.24 7.7201L27.3333 7.65344ZM7.10665 24.6668H3.33331V20.8934L16.5733 7.65344L20.3466 11.4268L7.10665 24.6668ZM22.2266 9.54677L18.4533 5.77344L20.3466 3.89344L24.1066 7.65344L22.2266 9.54677Z"
-                                fill="#A53DFF" />
-                        </svg>
-
-
-                    </span>
-
-                        <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
-                        <div class="w-[248px]">
-                            <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">3.Design</h2>
-                            <p class="text-base font-display text-gray-600 text-justify">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Nulla purus arcu.</p>
-                        </div>
-                    </div>
-
-                    <!-- card work 4-->
-                    <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl  work mx-4 xl:mx-0 hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
-
-
-                    <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
-
-                        <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M26 13.6666H24.6666V4.33325C24.6666 3.27239 24.2452 2.25497 23.4951 1.50482C22.7449 0.754679 21.7275 0.333252 20.6666 0.333252H7.33329C6.27243 0.333252 5.25501 0.754679 4.50487 1.50482C3.75472 2.25497 3.33329 3.27239 3.33329 4.33325V13.6666H1.99996C1.64634 13.6666 1.3072 13.8071 1.05715 14.0571C0.807102 14.3072 0.666626 14.6463 0.666626 14.9999V17.6666C0.666626 18.7274 1.08805 19.7449 1.8382 20.495C2.58834 21.2452 3.60576 21.6666 4.66663 21.6666H23.3333C24.3942 21.6666 25.4116 21.2452 26.1617 20.495C26.9119 19.7449 27.3333 18.7274 27.3333 17.6666V14.9999C27.3333 14.6463 27.1928 14.3072 26.9428 14.0571C26.6927 13.8071 26.3536 13.6666 26 13.6666ZM5.99996 4.33325C5.99996 3.97963 6.14044 3.64049 6.39048 3.39044C6.64053 3.14039 6.97967 2.99992 7.33329 2.99992H20.6666C21.0202 2.99992 21.3594 3.14039 21.6094 3.39044C21.8595 3.64049 22 3.97963 22 4.33325V13.6666H5.99996V4.33325ZM24.6666 17.6666C24.6666 18.0202 24.5262 18.3593 24.2761 18.6094C24.0261 18.8594 23.6869 18.9999 23.3333 18.9999H4.66663C4.313 18.9999 3.97387 18.8594 3.72382 18.6094C3.47377 18.3593 3.33329 18.0202 3.33329 17.6666V16.3333H24.6666V17.6666Z"
-                                fill="#A53DFF" />
-                        </svg>
-
-                    </span>
-
-                        <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
-                        <div class="w-[248px]">
-                            <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">4.Launch</h2>
-                            <p class="text-base font-display text-gray-600 text-justify">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Nulla purus arcu.</p>
-                        </div>
-                    </div>
-
+   <!-- work area Start-->
+<section class="bg-[#F0F1F3] xl:-mt-[108px]  overflow-hidden xl:pt-[248px] pt-4 xl:pb-[140px] pb-4" id="workprocess">
+    <div class="container">
+        <!-- work process start -->
+        <div class="px-4 xl:px-0">
+            <div class="flex flex-wrap  xl:flex-wrap justify-between">
+                <!-- left -->
+                <div class="xl:max-w-[529px] w-full xl:pt-[180px] xl:text-start">
+                    <h2 class="text-gray-900 font-display font-semibold xl:text-[48px] text-4xl leading-[56px] capitalize">
+                        work process</h2>
+                    <p class="text-gray-500 pt-1 xl:pt-6  font-display text-[18px] leading-[24px]">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Nulla
+                        purus arcu, varius eget velit non,
+                        laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
+                    <p class="pt-4 text-gray-500 font-display text-[18px] leading-[24px]">Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Nulla
+                        purus arcu, varius eget velit non.</p>
                 </div>
+                <!-- left -->
 
-                   <!-- right -->
+                <!-- <div class="flex lg:items-center lg:justify-between flex-col lg:flex-row gap-y-[45px] py-[30px] lg:py-0 px-[15px] sm:px-[30px] md:px-[40px] lg:px-[50px] xl:px-[75px] w-full h-auto lg:h-[380px] bg-white"> -->
+
+                <!-- flex flex-wrap sm:w-1/2 sm:flex gap-6 xl:max-w-[648px] w-full mt-4 -->
+
+               <!-- right -->
+               <div class="flex flex-wrap gap-6 xl:max-w-[648px] w-full mt-4">
                     
+                <!-- card work 1 -->
+                <div class="xl:max-w-[312px] sm:max-w-[332px] w-full max-h-[276px] xl:min-h-[276px] bg-white px-8 py-8 rounded-xl work hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
+
+                    <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
+                        <svg width="24" height="28" viewBox="0 0 24 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.3333 16.6666H6.66667C6.31305 16.6666 5.97391 16.8071 5.72386 17.0572C5.47381 17.3072 5.33333 17.6463 5.33333 18C5.33333 18.3536 5.47381 18.6927 5.72386 18.9428C5.97391 19.1928 6.31305 19.3333 6.66667 19.3333H17.3333C17.687 19.3333 18.0261 19.1928 18.2761 18.9428C18.5262 18.6927 18.6667 18.3536 18.6667 18C18.6667 17.6463 18.5262 17.3072 18.2761 17.0572C18.0261 16.8071 17.687 16.6666 17.3333 16.6666ZM17.3333 11.3333H9.33333C8.97971 11.3333 8.64057 11.4738 8.39052 11.7238C8.14048 11.9739 8 12.313 8 12.6666C8 13.0202 8.14048 13.3594 8.39052 13.6094C8.64057 13.8595 8.97971 14 9.33333 14H17.3333C17.687 14 18.0261 13.8595 18.2761 13.6094C18.5262 13.3594 18.6667 13.0202 18.6667 12.6666C18.6667 12.313 18.5262 11.9739 18.2761 11.7238C18.0261 11.4738 17.687 11.3333 17.3333 11.3333ZM22.6667 3.33329H18.6667V1.99996C18.6667 1.64634 18.5262 1.3072 18.2761 1.05715C18.0261 0.807102 17.687 0.666626 17.3333 0.666626C16.9797 0.666626 16.6406 0.807102 16.3905 1.05715C16.1405 1.3072 16 1.64634 16 1.99996V3.33329H13.3333V1.99996C13.3333 1.64634 13.1929 1.3072 12.9428 1.05715C12.6928 0.807102 12.3536 0.666626 12 0.666626C11.6464 0.666626 11.3072 0.807102 11.0572 1.05715C10.8071 1.3072 10.6667 1.64634 10.6667 1.99996V3.33329H8V1.99996C8 1.64634 7.85952 1.3072 7.60948 1.05715C7.35943 0.807102 7.02029 0.666626 6.66667 0.666626C6.31305 0.666626 5.97391 0.807102 5.72386 1.05715C5.47381 1.3072 5.33333 1.64634 5.33333 1.99996V3.33329H1.33333C0.979711 3.33329 0.640573 3.47377 0.390524 3.72382C0.140476 3.97387 0 4.313 0 4.66663V23.3333C0 24.3942 0.421427 25.4116 1.17157 26.1617C1.92172 26.9119 2.93913 27.3333 4 27.3333H20C21.0609 27.3333 22.0783 26.9119 22.8284 26.1617C23.5786 25.4116 24 24.3942 24 23.3333V4.66663C24 4.313 23.8595 3.97387 23.6095 3.72382C23.3594 3.47377 23.0203 3.33329 22.6667 3.33329ZM21.3333 23.3333C21.3333 23.6869 21.1929 24.0261 20.9428 24.2761C20.6928 24.5262 20.3536 24.6666 20 24.6666H4C3.64638 24.6666 3.30724 24.5262 3.05719 24.2761C2.80714 24.0261 2.66667 23.6869 2.66667 23.3333V5.99996H5.33333V7.33329C5.33333 7.68691 5.47381 8.02605 5.72386 8.2761C5.97391 8.52615 6.31305 8.66663 6.66667 8.66663C7.02029 8.66663 7.35943 8.52615 7.60948 8.2761C7.85952 8.02605 8 7.68691 8 7.33329V5.99996H10.6667V7.33329C10.6667 7.68691 10.8071 8.02605 11.0572 8.2761C11.3072 8.52615 11.6464 8.66663 12 8.66663C12.3536 8.66663 12.6928 8.52615 12.9428 8.2761C13.1929 8.02605 13.3333 7.68691 13.3333 7.33329V5.99996H16V7.33329C16 7.68691 16.1405 8.02605 16.3905 8.2761C16.6406 8.52615 16.9797 8.66663 17.3333 8.66663C17.687 8.66663 18.0261 8.52615 18.2761 8.2761C18.5262 8.02605 18.6667 7.68691 18.6667 7.33329V5.99996H21.3333V23.3333Z"
+                                fill="#A53DFF" />
+                        </svg>
+
+
+
+                    </span>
+
+                    <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
+                    <div class="w-[248px]">
+                        <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">1.Research</h2>
+                        <p class="text-base font-display text-gray-600">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nulla purus arcu.</p>
+                    </div>
                 </div>
-    
+
+                <!-- card work 2 -->
+                <!-- <div class="lg:max-w-[312px]  max-h-[276px] xl:min-h-[276px] bg-white px-8 py-8 rounded-xl  work mx-4 xl:mx-0"> -->
+
+                <div class="xl:max-w-[312px] sm:max-w-[332px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 mt-0 xl:mt-6 rounded-xl  work hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
+
+                    <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
+
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.33333 21.3333C9.86377 21.3333 10.3725 21.1226 10.7475 20.7475C11.1226 20.3724 11.3333 19.8637 11.3333 19.3333C11.3398 19.2668 11.3398 19.1998 11.3333 19.1333L15.0533 15.4133H15.36H15.6667L17.8133 17.56C17.8133 17.56 17.8133 17.6266 17.8133 17.6666C17.8133 18.1971 18.024 18.7058 18.3991 19.0808C18.7742 19.4559 19.2829 19.6666 19.8133 19.6666C20.3438 19.6666 20.8525 19.4559 21.2275 19.0808C21.6026 18.7058 21.8133 18.1971 21.8133 17.6666V17.56L26.6667 12.6666C27.0622 12.6666 27.4489 12.5493 27.7778 12.3296C28.1067 12.1098 28.363 11.7974 28.5144 11.432C28.6658 11.0665 28.7054 10.6644 28.6282 10.2764C28.5511 9.88848 28.3606 9.53212 28.0809 9.25241C27.8012 8.97271 27.4448 8.78223 27.0568 8.70506C26.6689 8.62788 26.2668 8.66749 25.9013 8.81887C25.5358 8.97024 25.2235 9.22659 25.0037 9.55549C24.784 9.88438 24.6667 10.2711 24.6667 10.6666C24.6602 10.7331 24.6602 10.8001 24.6667 10.8666L19.8533 15.68H19.64L17.3333 13.3333C17.3333 12.8029 17.1226 12.2942 16.7475 11.9191C16.3725 11.544 15.8638 11.3333 15.3333 11.3333C14.8029 11.3333 14.2942 11.544 13.9191 11.9191C13.544 12.2942 13.3333 12.8029 13.3333 13.3333L9.33333 17.3333C8.8029 17.3333 8.29419 17.544 7.91912 17.9191C7.54405 18.2942 7.33333 18.8029 7.33333 19.3333C7.33333 19.8637 7.54405 20.3724 7.91912 20.7475C8.29419 21.1226 8.8029 21.3333 9.33333 21.3333ZM27.3333 26.6666H4.66667V3.99996C4.66667 3.64634 4.52619 3.3072 4.27614 3.05715C4.02609 2.8071 3.68696 2.66663 3.33333 2.66663C2.97971 2.66663 2.64057 2.8071 2.39052 3.05715C2.14048 3.3072 2 3.64634 2 3.99996V28C2 28.3536 2.14048 28.6927 2.39052 28.9428C2.64057 29.1928 2.97971 29.3333 3.33333 29.3333H27.3333C27.687 29.3333 28.0261 29.1928 28.2761 28.9428C28.5262 28.6927 28.6667 28.3536 28.6667 28C28.6667 27.6463 28.5262 27.3072 28.2761 27.0571C28.0261 26.8071 27.687 26.6666 27.3333 26.6666Z"
+                                fill="#A53DFF" />
+                        </svg>
+
+
+                    </span>
+
+                    <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
+                    <div class="w-[248px]">
+                        <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">2.Analyze</h2>
+                        <p class="text-base font-display text-gray-600">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nulla purus arcu.</p>
+                    </div>
+                </div>
+
+                <!-- card work 3 -->
+                <div class="xl:max-w-[312px] sm:max-w-[332px] w-full max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl xl:-mt-6  work hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
+
+                    <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px]  mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
+
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M27.3333 7.65344C27.3343 7.47796 27.3007 7.30401 27.2343 7.14156C27.168 6.97911 27.0702 6.83136 26.9466 6.70677L21.2933 1.05344C21.1687 0.929862 21.021 0.832095 20.8585 0.765742C20.6961 0.699389 20.5221 0.665756 20.3466 0.66677C20.1712 0.665756 19.9972 0.699389 19.8348 0.765742C19.6723 0.832095 19.5246 0.929862 19.4 1.05344L15.6266 4.82677L1.05331 19.4001C0.92974 19.5247 0.831973 19.6724 0.76562 19.8349C0.699267 19.9973 0.665634 20.1713 0.666648 20.3468V26.0001C0.666648 26.3537 0.807124 26.6929 1.05717 26.9429C1.30722 27.193 1.64636 27.3334 1.99998 27.3334H7.65331C7.83988 27.3436 8.0265 27.3144 8.20107 27.2478C8.37564 27.1812 8.53426 27.0786 8.66665 26.9468L23.16 12.3734L26.9466 8.66677C27.0683 8.53754 27.1675 8.38881 27.24 8.22677C27.2528 8.12049 27.2528 8.01305 27.24 7.90677C27.2462 7.8447 27.2462 7.78217 27.24 7.7201L27.3333 7.65344ZM7.10665 24.6668H3.33331V20.8934L16.5733 7.65344L20.3466 11.4268L7.10665 24.6668ZM22.2266 9.54677L18.4533 5.77344L20.3466 3.89344L24.1066 7.65344L22.2266 9.54677Z"
+                            fill="#A53DFF" />
+                    </svg>
+
+
+                </span>
+
+                    <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
+                    <div class="w-[248px]">
+                        <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">3.Design</h2>
+                        <p class="text-base font-display text-gray-600">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nulla purus arcu.</p>
+                    </div>
+                </div>
+
+                <!-- card work 4-->
+                <div class="xl:max-w-[312px] sm:max-w-[332px] w-full  max-h-[276px] xl:min-h-[276px] bg-white p-8 rounded-xl  work hover:shadow-[32px_32px_124px_rgba(43,56,76,0.1);] transition ease-in-out duration-300 cursor-pointer">
+
+
+                <span class="bg-[#EDD8FF] work2  opacity-100 p-4 w-[72px] h-[72px] mb-2 xl:mb-8 rounded text-center flex items-center justify-center">
+
+                    <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26 13.6666H24.6666V4.33325C24.6666 3.27239 24.2452 2.25497 23.4951 1.50482C22.7449 0.754679 21.7275 0.333252 20.6666 0.333252H7.33329C6.27243 0.333252 5.25501 0.754679 4.50487 1.50482C3.75472 2.25497 3.33329 3.27239 3.33329 4.33325V13.6666H1.99996C1.64634 13.6666 1.3072 13.8071 1.05715 14.0571C0.807102 14.3072 0.666626 14.6463 0.666626 14.9999V17.6666C0.666626 18.7274 1.08805 19.7449 1.8382 20.495C2.58834 21.2452 3.60576 21.6666 4.66663 21.6666H23.3333C24.3942 21.6666 25.4116 21.2452 26.1617 20.495C26.9119 19.7449 27.3333 18.7274 27.3333 17.6666V14.9999C27.3333 14.6463 27.1928 14.3072 26.9428 14.0571C26.6927 13.8071 26.3536 13.6666 26 13.6666ZM5.99996 4.33325C5.99996 3.97963 6.14044 3.64049 6.39048 3.39044C6.64053 3.14039 6.97967 2.99992 7.33329 2.99992H20.6666C21.0202 2.99992 21.3594 3.14039 21.6094 3.39044C21.8595 3.64049 22 3.97963 22 4.33325V13.6666H5.99996V4.33325ZM24.6666 17.6666C24.6666 18.0202 24.5262 18.3593 24.2761 18.6094C24.0261 18.8594 23.6869 18.9999 23.3333 18.9999H4.66663C4.313 18.9999 3.97387 18.8594 3.72382 18.6094C3.47377 18.3593 3.33329 18.0202 3.33329 17.6666V16.3333H24.6666V17.6666Z"
+                            fill="#A53DFF" />
+                    </svg>
+
+                </span>
+
+                    <!-- <img src="img/logo/Frame 44-1.png" alt=""> -->
+                    <div class="w-[248px]">
+                        <h2 class="text-[20px] leading-[24px] font-display font-semibold mb-3">4.Launch</h2>
+                        <p class="text-base font-display text-gray-600">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nulla purus arcu.</p>
+                    </div>
+                </div>
+
+               </div>
+
+               <!-- right -->
+                
             </div>
-            <!-- work process end -->
-    
+
         </div>
-    </section>
-    <!-- work area End -->
+        <!-- work process end -->
+
+    </div>
+</section>
+<!-- work area End -->
 
     <!-- portfolio area Start-->
     <section class="py-4 xl:py-[100px]" id="portfolio">
@@ -687,6 +703,8 @@
 
     <!-- call-to-action area Start-->
     <section class="bg-gray-900 xl:py-[100px]" data-aos="fade-in">
+
+       <div class="container px-4 xl:px-0">
         <div class="flex justify-center items-center">
             <div class="text-center max-w-[621px] pb-4 xl:pb-0">
                 <h2
@@ -711,15 +729,16 @@
                     </button>
             </div>
         </div>
+       </div>
     </section>
 
     <!-- call-to-action area End -->
 
     <!-- blog area Start-->
 
-    <section class="xl:py-[100px]  bg-transparent" id="blog">
+    <section class="xl:py-[100px] bg-transparent" id="blog">
 
-        <div class="container px-2 xl:px-0">
+        <div class="container px-4 xl:px-0">
             <div class="text-center xl:min-w-[560px] w-full mx-auto">
 
                 <h2 class="font-display  xl:text-[48px] text-[20px]  leading-[56px] font-semibold text-gray-900" data-aos="zoom-in">Blog
@@ -734,7 +753,7 @@
                 <!-- blog card start -->
 
                 <!-- blog item 1 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6 md:mr-6 mr-0">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6 md:mr-6 mr-0">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -754,7 +773,7 @@
                 <!-- blog item 1 End-->
 
                 <!-- blog item 2 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6 md:mr-6 mr-0">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6 md:mr-6 mr-0">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -774,7 +793,7 @@
                 <!-- blog item 2 End-->
 
                 <!-- blog item 3 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -794,7 +813,7 @@
                 <!-- blog item 3 End-->
 
                 <!-- blog item 4 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -814,7 +833,7 @@
                 <!-- blog item 4 End-->
 
                 <!-- blog item 3 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -834,7 +853,7 @@
                 <!-- blog item 3 End-->
 
                 <!-- blog item 2 start -->
-                <div class="border-[1px] xl:mx-0 w-[312px] border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
+                <div class="border-[1px] xl:mx-0 xl:w-[312px] w-full border-gray-200 hover:border-transparent rounded-lg hover:shadow-2xl transition ease-in-out duration-500 cursor-pointer overflow-hidden xl:mr-6">
                     <!-- blog image start -->
                     <div class="w-full">
                         <img src="img/blog1.png" alt="" class="w-full ">
@@ -867,14 +886,14 @@
             <div class="flex flex-wrap xl:flex-nowrap  items-center gap-12 xl:gap-[143px]">
                 
                 <!-- left -->
-                <div class="max-w-[529px] w-full text-center xl:text-start">
+                <div class="max-w-[529px] w-full text-center mx-auto xl:text-start">
                     <h2 class="font-display xl:text-[48px] text-[24px] leading-[56px] text-[#333333] font-semibold pt-6 xl:pt-0 xl:mb-6">
                         What I do?</h2>
-                    <p class="font-display text-[18px] leading-[24px] text-gray-400 text-justify">Lorem ipsum dolor sit amet,
+                    <p class="font-display text-[18px] leading-[24px] text-gray-400">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Nulla
                         purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac
                         vestibulum. Suspendis imperdiet,</p>
-                    <p class="xl:mt-4 font-display text-[18px] leading-[24px] text-gray-400 text-justify">Lorem ipsum dolor sit amet,
+                    <p class="xl:mt-4 pt-4 xl:pt-0 font-display text-[18px] leading-[24px] text-gray-400">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit. Nulla
                         purus arcu, varius eget velit non.</p>
                     <button
@@ -884,11 +903,12 @@
                 <!-- left -->
 
                 <!-- right -->
-                <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex flex-col xl:flex-col lg:flex-row gap-6">
+
                     <!-- item1 -->
                     <div class="px-8 py-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden xl:text-start cursor-pointer">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold" data-aos="fade-down">User Experience (UX)</h2>
-                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 text-justify" data-aos="fade-up">Lorem ipsum dolor sit
+                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 " data-aos="fade-up">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
                             purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac
                             vestibulum.</p>
@@ -896,7 +916,7 @@
                     <!-- item2 -->
                     <div class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden xl:text-start cursor-pointer">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold" data-aos="fade-down">User Interface (UI)</h2>
-                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 text-justify" data-aos="fade-up">Lorem ipsum dolor sit
+                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 " data-aos="fade-up">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
                             purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac
                             vestibulum.</p>
@@ -904,7 +924,7 @@
                     <!-- item3 -->
                     <div class="p-8 bg-white hover:shadow-xl border-l-4 border-transparent  hover:border-[#A53DFF] hover:border-l-4 transition ease-in-out duration-500 rounded-lg overflow-hidden xl:text-start cursor-pointer">
                         <h2 class="font-display text-[24px] leading-[100%] font-semibold" data-aos="fade-down">Web Development</h2>
-                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 text-justify" data-aos="fade-up">Lorem ipsum dolor sit
+                        <p class="pt-4 font-display text-[16px] leading-[24px] text-gray-400 " data-aos="fade-up">Lorem ipsum dolor sit
                             amet, consectetur adipiscing elit. Nulla
                             purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac
                             vestibulum.</p>
@@ -968,7 +988,7 @@
     <!-- client area Start-->
 
     <!-- testimonial area start -->
-    <section class="xl:px-[524px] pb-[100px]">
+    <section class="xl:px-[524px] xl:pb-[100px]">
         <div class="container px-4 xl:px-0">
             <div class="xl:min-w-[577px] w-full text-center mx-auto">
                 <h2 class="xl:text-[48px] text-[20px] leading-[56px] font-display font-semibold" data-aos="fade-down">Testimonial</h2>
@@ -1068,9 +1088,9 @@
         <div class="flex flex-wrap  xl:flex-nowrap justify-between items-center">
             <!-- left -->
             <div class="max-w-[481px] w-full">
-                <h2 class="xl:text-[38px] text-[20px] text-center xl:text-left leading-[50px] font-semibold font-display">Let’s discuss your
+                <h2 class="xl:text-[38px] text-[20px] text-center mx-auto xl:text-left leading-[50px] font-semibold font-display">Let’s discuss your
                     Project</h2>
-                <p class="xl:pt-4 text-gray-400 text-[18px] text-justify leading-[24px] font-display">There are many variations of
+                <p class="xl:pt-4 text-gray-400 text-[18px] text-center leading-[24px] font-display">There are many variations of
                     passages of Lorem Ipsu available.
                     but the majority have suffered alte.</p>
                 <div class="flex flex-col mt-[35px]">
@@ -1093,8 +1113,6 @@
                                 Mexico 31134</p>
                         </div>
                     </div>
-
-
 
                     <div class="flex items-center gap-[13px] hover:bg-white  hover:shadow-xl transition duration-300 p-6 mt-3 map">
                         <span
@@ -1226,10 +1244,10 @@
             </div>
             <!-- right -->
             <div class="xl:max-w-[560px] w-full pt-4 xl:pt-0">
-                <h4 class="text-gray-400 font-display text-justify text-[18px] leading-[24px]">There are many variations of
-                    passages of Lorem Ipsu available,
+                <h4 class="text-gray-400 font-display text-center text-[18px] leading-[24px]">There are many variations
+                     of passages of Lorem Ipsu available,
                     but the majority have suffered alte.</h4>
-                <div class="mt-[50px] mb-6">
+                <div class="mt-[50px] xl:mb-6">
 
                     <form action="">
                         <div class="mb-[32px] relative transition duration-500">
@@ -1275,7 +1293,7 @@
                                 *</label>
                         </div>
                         <button
-                            class="bg-[#A53DFF] px-6 py-4 mt-[50px] rounded text-white w-[141px] h-[48px] flex items-center justify-center gap-[20px] ">
+                            class="bg-[#A53DFF] px-6 py-4 mt-4 xl:mt-[50px] rounded text-white w-[141px] h-[48px] flex items-center justify-center gap-[20px] ">
                             <span class="text-[16px] leading-6">Submit</span>
                             <span class="">
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -1383,7 +1401,7 @@
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 2000, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them

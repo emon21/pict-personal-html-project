@@ -440,13 +440,6 @@ flex-grow: 0;
     left: -15px;
 }
 
-/* responsive */
-
-@media (max-width:525px) {
-    .slick-dots li button:before {
-        top:-8px;
-    }
-}
 /* testimonials area end */
 
 /* partner area start */
@@ -454,6 +447,43 @@ flex-grow: 0;
 
 /* footer area start */
 /* footer area end */
+
+
+
+/* responsive */
+
+@media (max-width:525px) {
+    .slick-dots li button:before {
+        top:-8px;
+
+
+    }
+
+    .blog-item .slick-dots li button:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        content: '';
+        background-color: #C3C7CE;
+        border-radius: 100%;
+        opacity: 1;
+    }
+
+    .testimonial .slick-dots li button:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        content: '';
+        background-color: #C3C7CE;
+        border-radius: 100%;
+        opacity: 1;
+       
+    }
+}
 
 
 
