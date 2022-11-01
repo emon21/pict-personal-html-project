@@ -20,10 +20,7 @@ Check the [Live Demo here](https://demo.echotemplate.com/appkite-app-landing-htm
     </a>
 
 ## About Brooklyn 
-
-<h4>Rapidly build modern websites without ever leaving your HTML.</h4>
-<p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
-
+Broklyn Landing Html Template on tailwind css.
 <!-- - [Header] -->
 - [Header]
 - [banner]
