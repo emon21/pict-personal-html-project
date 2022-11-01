@@ -2123,6 +2123,10 @@ video {
     margin-top: 1rem;
   }
 
+  .xl\:ml-0 {
+    margin-left: 0px;
+  }
+
   .xl\:h-\[200px\] {
     height: 200px;
   }
