@@ -15,10 +15,6 @@ Check the [Live Demo here](https://demo.echotemplate.com/appkite-app-landing-htm
     </a>
 </p>
 
- <a href="https://picto-html-single-page-template.netlify.app/">
-        See live
-    </a>
-
 ## About Brooklyn 
 Broklyn Landing Html Template on tailwind css.
 <!-- - [Header] -->
