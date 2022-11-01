@@ -1,27 +1,63 @@
+# [Echotemplate.com](https://echotemplate.com)
+FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [Echotemplate.com](https://echotemplate.com) for more updates.
+
+# [Picto Landing Page](https://www.echotemplate.com/templates/appkite-app-landing-template)
+
+> Picto landing html template based on tailwind framework
+
+This Project is a Tailwind version [Picto Landing Page](http://echotemplate.com) designed with HTML & CSS.
+
+Check the [Live Demo here](https://demo.echotemplate.com/appkite-app-landing-html-template).
 
 <p align="center">
-    <a href="#" target="_blank">
-        <img src="img/Tailwind_CSS_logo.svg.png" width="400">
+    <a href="https://picto-html-single-page-template.netlify.app/">
+        <img src="img/screenshort.png" alt="Build Status">
     </a>
 </p>
 
-<p align="center">
-    <a href="https://travis-ci.org/laravel/framework">
-        <img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status">
-    </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-        <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
-    </a>
-</p>
+## About Brooklyn 
+Broklyn Landing Html Template on tailwind css.
+<!-- - [Header] -->
+- [Header]
+- [banner]
+- [about]
+- [service]
+- [Protfolio]
+- [blog]
+- [contact]
+- [footer]
 
-## About Tailwind 
+#To get started:
 
-<h4>Rapidly build modern websites without ever leaving your HTML.</h4>
-<p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
 
-<!-- - [Simple, fast routing engine](https://laravel.com/docs/routing). -->
-- [It’s tiny — never ship unused CSS again]
-- Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.
-- [Build whatever you want, seriously]
+1.Install the dependencies:
 
-- Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.
+# Using npm
+npm install
+
+# Using Yarn
+yarn
+
+2.Start the development server:
+
+# Using npm
+npm run serve
+
+# Using Yarn
+yarn serve
+Now you should be able to see the project running at localhost:5502.
+
+3.Open public/index.html in your editor and start experimenting!
+
+Building for production
+To build an optimized version of your CSS, simply run:
+
+# Using npm
+npm run prod
+
+# Using Yarn
+yarn prod
+After that's done, check out ./public/build/css/tailwind.css to see the optimized output.
+
+## Credits
+- Design & coded by [Echo Template](https://github.com/echotemplate)

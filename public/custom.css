@@ -5,19 +5,40 @@
 } */
 
 body{
-    background-image: url('../img/BG.png') ;
+    background-image: url('../img/BG.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
+
+/* preloader */
+
+.preloader {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100%;
+    max-width: 500px;
+    ;
+}
+
+/* preloader */
+
 .btn:hover svg path {
     fill:#fff;
     transition: all .5s;
    
 }
-
 
 .work:hover .work2 {
 
@@ -36,12 +57,9 @@ body{
     /* fill:#fff; */
 background:#A53DFF;
 }
-.work-icon:hover{
-/* background:#A53DFF; */
-}
 
 .map{
-    background-color: rgba(250, 246, 246, 0.027);
+    /* background-color: rgba(250, 246, 246, 0.027); */
 }
 
 .map:hover .map2{
@@ -50,6 +68,7 @@ background:#A53DFF;
     transition: .5s;
     box-shadow: 0px 59px 124px rgba(0, 0, 0, 0.12);
 }
+
 .map:hover .map2 svg path{
     fill: #fff; 
 }
@@ -62,11 +81,11 @@ background:#A53DFF;
 }
 .social-icon:hover{
     background:#A53DFF;
+    border-radius: 4px;
   
 }
 .social-icon:hover svg path{
     fill:#fff;
-
 
 }
 .box-shadow{
@@ -74,50 +93,98 @@ background:#A53DFF;
 }
 
 
-.picto-btn{
+/* form */
+.input-field:focus + .label-field{
+    bottom: 24px;
+    color: #A53DFF;
+    transition: all 0.7s ease-in-out;
+}
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 12px 24px;
+/* form */
 
-/* Primary/500 */
-/* background: #A53DFF; */
-border-radius: 4px;
+.picto-btn {
 
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    /* background: #A53DFF; */
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #FFFFFF; */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin-top: 20px;
+    margin-bottom: 28px; */
+}
 
-
-/* Button */
-
-
-
-/* Body/Regular/600 */
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-/* color: #FFFFFF; */
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
+.top-menu.scroll-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    /* border-bottom: 2px solid red; */
+    top: 0;
+    transition: 0.5s;
+    color: aliceblue;
+    z-index: 1000;
+    transition: all 0.5s;
+    box-shadow: -21.213px 21.213px 30px 0px rgb(158 158 158 / 30%);
+   
 }
 
 
+.nav-menu li.active {
+    /* background: rgb(243, 240, 240); */
+    color: #a53dff;
+}
+.nav-menu li{
+    color: #333333;
+    text-decoration: none;
+}
+
+.slick-dots li{
+    margin-top: 24px;
+}
+
+/* .slick-dots li.slick-active {
+    background: #210C33;
+    width: 30px;
+    height: 8px;
+    border-radius: 100px;
+    margin-top: 0px;
+}
+
+button#slick-slide-control10 {
+    background: aquamarine;
+    border-radius: 100px;
+    width: 30px;
+    height: 8px;
+} */
+
+/* .icon-inner, .ionicon, svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: rgb(20, 18, 18);
+
+} */
+
+ .ionicon, svg {
+    color: red;
+}
+
 .picto-btn:hover svg path{
     fill: #fff;
+ 
 }
 /* socail icon */
 .start-btn{
@@ -198,8 +265,6 @@ order: 1;
 flex-grow: 0;
 }
 
-
-
 .btn-txt{
     /* Button */
 
@@ -224,6 +289,7 @@ order: 1;
 flex-grow: 0;
 
 }
+
 
 
 /* header area start */
@@ -255,13 +321,169 @@ flex-grow: 0;
 /* plan area end */
 
 /* blog area start */
+
+
+
+/* .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    top: 406px;
+    background-color: #A53DFF;
+} */
+/*
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background: #C3C7CE;
+    border-radius: 100%;
+} */
+
+/* .slick-dots li button {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #C3C7CE;
+    border-radius: 100%;
+    opacity: 1;
+} */
+
+/* .slick-dots li.slick-active button:before {
+    
+    background: #ff00ff !important;
+     background: #210C33 !important; 
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 100px;
+    left: -15px;
+} */
+
+/* .slick-dots li button:before {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #C3C7CE;
+    border-radius: 100%;
+    opacity: 1;
+   
+} */
+
+
+
+.blog-item .slick-dots li button:before {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #C3C7CE;
+    border-radius: 100%;
+    opacity: 1;
+   
+}
+
+.blog-item  .slick-dots  li.slick-active button:before {
+    
+    background: #ff00ff !important;
+     background: #210C33 !important; 
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 100px;
+    left: -15px;
+}
+
 /* blog area end */
+
+
+/* testimonials area start */
+
+
+.testimonial .slick-dots li button:before {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background-color: #C3C7CE;
+    border-radius: 100%;
+    opacity: 1;
+   
+}
+
+.testimonial  .slick-dots  li.slick-active button:before {
+    
+    background: #ff00ff !important;
+     background: #210C33 !important; 
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 100px;
+    left: -15px;
+}
+
+/* testimonials area end */
 
 /* partner area start */
 /* partner area end */
 
 /* footer area start */
 /* footer area end */
+
+
+
+/* responsive */
+
+@media (max-width:525px) {
+    .slick-dots li button:before {
+        top:-8px;
+
+
+    }
+
+    .blog-item .slick-dots li button:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        content: '';
+        background-color: #C3C7CE;
+        border-radius: 100%;
+        opacity: 1;
+    }
+
+    .testimonial .slick-dots li button:before {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        content: '';
+        background-color: #C3C7CE;
+        border-radius: 100%;
+        opacity: 1;
+       
+    }
+}
+
+/* responsive */
 
 
 

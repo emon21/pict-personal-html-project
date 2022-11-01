@@ -7,5 +7,9 @@
     "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "flowbite": "^1.5.3"
+  }
+
 }
