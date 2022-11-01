@@ -1,3 +1,13 @@
+# [Echotemplate.com](https://echotemplate.com)
+FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [Echotemplate.com](https://echotemplate.com) for more updates.
+
+# [Picto Landing Page](https://www.echotemplate.com/templates/appkite-app-landing-template)
+
+> Picto landing html template based on tailwind framework
+
+This Project is a Tailwind version [Picto Landing Page](http://echotemplate.com) designed with HTML & CSS.
+
+Check the [Live Demo here](https://demo.echotemplate.com/appkite-app-landing-html-template).
 
 <p align="center">
     <a href="https://picto-html-single-page-template.netlify.app/">
@@ -8,7 +18,6 @@
  <a href="https://picto-html-single-page-template.netlify.app/">
         See live
     </a>
-
 
 ## About Brooklyn 
 
@@ -27,13 +36,8 @@
 
 #To get started:
 
-1.Clone the repository:
 
-git clone https://github.com/emon21/pict-personal-html-project.git
-
-cd brooklyn
-
-2.Install the dependencies:
+1.Install the dependencies:
 
 # Using npm
 npm install
@@ -41,7 +45,7 @@ npm install
 # Using Yarn
 yarn
 
-3.Start the development server:
+2.Start the development server:
 
 # Using npm
 npm run serve
@@ -50,7 +54,7 @@ npm run serve
 yarn serve
 Now you should be able to see the project running at localhost:5502.
 
-4.Open public/index.html in your editor and start experimenting!
+3.Open public/index.html in your editor and start experimenting!
 
 Building for production
 To build an optimized version of your CSS, simply run:
@@ -62,4 +66,5 @@ npm run prod
 yarn prod
 After that's done, check out ./public/build/css/tailwind.css to see the optimized output.
 
-
+## Credits
+- Design & coded by [Echo Template](https://github.com/echotemplate)
