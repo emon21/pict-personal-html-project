@@ -25,8 +25,6 @@
 - [contact]
 - [footer]
 
-- Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.
-
 #To get started:
 
 1.Clone the repository:
